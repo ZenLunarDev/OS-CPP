@@ -19,12 +19,6 @@ static IDTPtr idtp;
 
 extern "C" void irq1_stub();
 
-// C-level Handler
-extern "C" void irq1_handler_c(uint32_t scancode) {
-    // Process Scancode Data (e.g., Key press / release)
-    (void)scancode;
-}
-
 // Remap Master/Slave PIC
 static void pic_remap() {
     // ICW1: Init Sequence
@@ -57,8 +51,8 @@ static void idt_set_gate(uint8_t num, uint32_t base, uint16_t sel, uint8_t flags
     idt[num].type_attributes = flags;
 }
 
-// Primary Initialization Routine
-void init_interrupts() {
+// Primary Initialization Routine (Single Entry with extern "C")
+extern "C" void init_interrupts() {
     idtp.limit = sizeof(IDTEntry) * 256 - 1;
     idtp.base  = reinterpret_cast<uint32_t>(&idt);
 

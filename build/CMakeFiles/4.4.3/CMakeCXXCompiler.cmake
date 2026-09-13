@@ -26,11 +26,11 @@ set(CMAKE_CXX_COMPILER_ARCHITECTURE_ID "i686")
 
 
 
-set(CMAKE_AR "C:/i686-elf-tools-windows/bin/i686-elf-ar.exe")
+set(CMAKE_AR "C:/msys64/ucrt64/bin/ar.exe")
 set(CMAKE_CXX_COMPILER_AR "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar.exe")
-set(CMAKE_RANLIB "C:/i686-elf-tools-windows/bin/i686-elf-ranlib.exe")
+set(CMAKE_RANLIB "C:/msys64/ucrt64/bin/ranlib.exe")
 set(CMAKE_CXX_COMPILER_RANLIB "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib.exe")
-set(CMAKE_LINKER "C:/i686-elf-tools-windows/bin/i686-elf-ld.exe")
+set(CMAKE_LINKER "C:/msys64/ucrt64/bin/ld.exe")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
 set(CMAKE_CXX_COMPILER_LINKER "NOTFOUND")

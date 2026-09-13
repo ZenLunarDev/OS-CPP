@@ -1,39 +1,39 @@
 cmake_minimum_required(VERSION 3.20)
 
-set(TOOLCHAIN_PATH "C:/i686-elf-tools-windows/bin")
+set(CMAKE_SYSTEM_NAME Generic)
+set(CMAKE_SYSTEM_PROCESSOR i686)
+
+# 1. ระบุ Full Path ของ Toolchain ในเครื่อง (เปลี่ยน Path ด้านล่างให้ตรงกับตำแหน่งจริง)
+set(TOOLCHAIN_PATH "C:/i686-elf-tools-windows/bin") # <--- แก้จุดนี้
+set(NASM_PATH "C:/Users/Lunar/AppData/Local/bin/NASM")      # <--- แก้จุดนี้ (ถ้าลงผ่าน Installer ปกติ)
 
 set(CMAKE_C_COMPILER "${TOOLCHAIN_PATH}/i686-elf-gcc.exe")
 set(CMAKE_CXX_COMPILER "${TOOLCHAIN_PATH}/i686-elf-g++.exe")
-set(CMAKE_ASM_COMPILER "${TOOLCHAIN_PATH}/i686-elf-as.exe")
+set(CMAKE_ASM_NASM_COMPILER "${NASM_PATH}/nasm.exe")
 
-set(CMAKE_SYSTEM_NAME Generic)
-set(CMAKE_SYSTEM_PROCESSOR i386)
-
+# บังคับไม่ให้ CMake รันการทดสอบการลิงก์ (Prevent Try-Compile Failures ใน Bare-Metal)
 set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 
-project(MeowOS C CXX ASM)
+project(MeowOS C CXX ASM_NASM)
 
-set(CMAKE_CXX_STANDARD 20)
+set(KERNEL_CXX_FLAGS "-m32 -ffreestanding -O2 -Wall -Wextra -fno-exceptions -fno-rtti")
+set(KERNEL_ASM_FLAGS "-f elf32")
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -ffreestanding -fno-builtin -fno-exceptions -fno-rtti -nostdlib -Wall -Wextra")
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -ffreestanding -fno-builtin -nostdlib -Wall -Wextra")
-set(CMAKE_ASM_FLAGS "")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${KERNEL_CXX_FLAGS}")
+set(CMAKE_ASM_NASM_FLAGS "${CMAKE_ASM_NASM_FLAGS} ${KERNEL_ASM_FLAGS}")
 
-set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/linker.ld)
-
-# รวม Source ทั้งหมด
-add_executable(MeowOS.bin
-        boot.s
-        interrupts.s
-        kernel.cpp
-        gdt.cpp
-        idt.cpp
-        keyboard.cpp
+set(SOURCES
+        isr_exception_stubs.asm
+        interrupts.cpp
+        shell_engine.cpp
+        vga_driver.cpp
+        kernel_main.cpp
 )
 
-# บังคับ Linker Flag และ ลำดับ Placement
-set_target_properties(MeowOS.bin PROPERTIES
+add_executable(kernel.bin ${SOURCES})
+
+set(LINKER_SCRIPT "${CMAKE_CURRENT_SOURCE_DIR}/linker.ld")
+set_target_properties(kernel.bin PROPERTIES
+        LINK_FLAGS "-m32 -nostdlib -Wl,-T,${LINKER_SCRIPT}"
         SUFFIX ""
-        OUTPUT_NAME "MeowOS.bin"
-        LINK_FLAGS "-T ${LINKER_SCRIPT} -nostdlib -nodefaultlibs -Wl,--no-warn-rwx-segments"
 )

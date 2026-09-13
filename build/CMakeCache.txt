@@ -15,33 +15,28 @@
 ########################
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=C:/i686-elf-tools-windows/bin/i686-elf-addr2line.exe
+CMAKE_ADDR2LINE:FILEPATH=C:/msys64/ucrt64/bin/addr2line.exe
 
 //Path to a program.
-CMAKE_AR:FILEPATH=C:/i686-elf-tools-windows/bin/i686-elf-ar.exe
+CMAKE_AR:FILEPATH=C:/msys64/ucrt64/bin/ar.exe
 
-//A wrapper around 'ar' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_ASM_COMPILER_AR:FILEPATH=C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar.exe
+//ASM_NASM compiler
+CMAKE_ASM_NASM_COMPILER:STRING=C:/Users/Lunar/AppData/Local/bin/NASM/nasm.exe
 
-//A wrapper around 'ranlib' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_ASM_COMPILER_RANLIB:FILEPATH=C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib.exe
+//Flags used by the ASM_NASM compiler during all build types.
+CMAKE_ASM_NASM_FLAGS:STRING=
 
-//Flags used by the ASM compiler during all build types.
-CMAKE_ASM_FLAGS:STRING=
+//Flags used by the ASM_NASM compiler during DEBUG builds.
+CMAKE_ASM_NASM_FLAGS_DEBUG:STRING=
 
-//Flags used by the ASM compiler during DEBUG builds.
-CMAKE_ASM_FLAGS_DEBUG:STRING=-g
+//Flags used by the ASM_NASM compiler during MINSIZEREL builds.
+CMAKE_ASM_NASM_FLAGS_MINSIZEREL:STRING=
 
-//Flags used by the ASM compiler during MINSIZEREL builds.
-CMAKE_ASM_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
+//Flags used by the ASM_NASM compiler during RELEASE builds.
+CMAKE_ASM_NASM_FLAGS_RELEASE:STRING=
 
-//Flags used by the ASM compiler during RELEASE builds.
-CMAKE_ASM_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
-
-//Flags used by the ASM compiler during RELWITHDEBINFO builds.
-CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
+//Flags used by the ASM_NASM compiler during RELWITHDEBINFO builds.
+CMAKE_ASM_NASM_FLAGS_RELWITHDEBINFO:STRING=
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
@@ -62,16 +57,16 @@ CMAKE_CXX_COMPILER_RANLIB:FILEPATH=C:/i686-elf-tools-windows/bin/i686-elf-gcc-ra
 CMAKE_CXX_FLAGS:STRING=
 
 //Flags used by the CXX compiler during DEBUG builds.
-CMAKE_CXX_FLAGS_DEBUG:STRING=-g
+CMAKE_CXX_FLAGS_DEBUG:STRING=
 
 //Flags used by the CXX compiler during MINSIZEREL builds.
-CMAKE_CXX_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
+CMAKE_CXX_FLAGS_MINSIZEREL:STRING=
 
 //Flags used by the CXX compiler during RELEASE builds.
-CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+CMAKE_CXX_FLAGS_RELEASE:STRING=
 
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
-CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
+CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -85,16 +80,16 @@ CMAKE_C_COMPILER_RANLIB:FILEPATH=C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranl
 CMAKE_C_FLAGS:STRING=
 
 //Flags used by the C compiler during DEBUG builds.
-CMAKE_C_FLAGS_DEBUG:STRING=-g
+CMAKE_C_FLAGS_DEBUG:STRING=
 
 //Flags used by the C compiler during MINSIZEREL builds.
-CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
+CMAKE_C_FLAGS_MINSIZEREL:STRING=
 
 //Flags used by the C compiler during RELEASE builds.
-CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+CMAKE_C_FLAGS_RELEASE:STRING=
 
 //Flags used by the C compiler during RELWITHDEBINFO builds.
-CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
+CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
 CMAKE_DLLTOOL:FILEPATH=C:/msys64/ucrt64/bin/dlltool.exe
@@ -121,7 +116,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/Lunar/CLionProjects/MeowOS/buil
 CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/MeowOS
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=C:/i686-elf-tools-windows/bin/i686-elf-ld.exe
+CMAKE_LINKER:FILEPATH=C:/msys64/ucrt64/bin/ld.exe
 
 //Path to a program.
 CMAKE_MAKE_PROGRAM:FILEPATH=C:/msys64/ucrt64/bin/mingw32-make.exe
@@ -147,13 +142,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=C:/i686-elf-tools-windows/bin/i686-elf-nm.exe
+CMAKE_NM:FILEPATH=C:/msys64/ucrt64/bin/nm.exe
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=C:/i686-elf-tools-windows/bin/i686-elf-objcopy.exe
+CMAKE_OBJCOPY:FILEPATH=C:/msys64/ucrt64/bin/objcopy.exe
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=C:/i686-elf-tools-windows/bin/i686-elf-objdump.exe
+CMAKE_OBJDUMP:FILEPATH=C:/msys64/ucrt64/bin/objdump.exe
 
 //Value Computed by CMake
 CMAKE_PROJECT_COMPAT_VERSION:STATIC=
@@ -171,10 +166,10 @@ CMAKE_PROJECT_NAME:STATIC=MeowOS
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=C:/i686-elf-tools-windows/bin/i686-elf-ranlib.exe
+CMAKE_RANLIB:FILEPATH=C:/msys64/ucrt64/bin/ranlib.exe
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=C:/i686-elf-tools-windows/bin/i686-elf-readelf.exe
+CMAKE_READELF:FILEPATH=C:/msys64/ucrt64/bin/readelf.exe
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -224,7 +219,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=C:/i686-elf-tools-windows/bin/i686-elf-strip.exe
+CMAKE_STRIP:FILEPATH=C:/msys64/ucrt64/bin/strip.exe
 
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
@@ -253,21 +248,19 @@ MeowOS_SOURCE_DIR:STATIC=C:/Users/Lunar/CLionProjects/MeowOS
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_ASM_COMPILER_AR
-CMAKE_ASM_COMPILER_AR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_ASM_COMPILER_RANLIB
-CMAKE_ASM_COMPILER_RANLIB-ADVANCED:INTERNAL=1
-CMAKE_ASM_COMPILER_WORKS:INTERNAL=1
-//ADVANCED property for variable: CMAKE_ASM_FLAGS
-CMAKE_ASM_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_ASM_FLAGS_DEBUG
-CMAKE_ASM_FLAGS_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_ASM_FLAGS_MINSIZEREL
-CMAKE_ASM_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_ASM_FLAGS_RELEASE
-CMAKE_ASM_FLAGS_RELEASE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_ASM_FLAGS_RELWITHDEBINFO
-CMAKE_ASM_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_NASM_COMPILER
+CMAKE_ASM_NASM_COMPILER-ADVANCED:INTERNAL=1
+CMAKE_ASM_NASM_COMPILER_WORKS:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_NASM_FLAGS
+CMAKE_ASM_NASM_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_NASM_FLAGS_DEBUG
+CMAKE_ASM_NASM_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_NASM_FLAGS_MINSIZEREL
+CMAKE_ASM_NASM_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_NASM_FLAGS_RELEASE
+CMAKE_ASM_NASM_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_NASM_FLAGS_RELWITHDEBINFO
+CMAKE_ASM_NASM_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=c:/Users/Lunar/CLionProjects/MeowOS/build
 //Major version of cmake used to create the current loaded cache
@@ -322,7 +315,7 @@ CMAKE_EDIT_COMMAND:INTERNAL=C:/Program Files/CMake/bin/cmake-gui.exe
 //Deprecated.  Use -W[no-]error=deprecated instead.
 CMAKE_ERROR_DEPRECATED:INTERNAL=OFF
 //Executable file format
-CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
+CMAKE_EXECUTABLE_FORMAT:INTERNAL=Unknown
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
 CMAKE_EXE_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_DEBUG

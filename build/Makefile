@@ -116,129 +116,121 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MeowOS.bin
+# Target rules for targets named kernel.bin
 
 # Build rule for target.
-MeowOS.bin: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MeowOS.bin
-.PHONY : MeowOS.bin
+kernel.bin: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 kernel.bin
+.PHONY : kernel.bin
 
 # fast build rule for target.
-MeowOS.bin/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MeowOS.bin.dir\build.make CMakeFiles/MeowOS.bin.dir/build
-.PHONY : MeowOS.bin/fast
+kernel.bin/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/build
+.PHONY : kernel.bin/fast
 
-boot.obj: boot.s.obj
-.PHONY : boot.obj
-
-# target to build an object file
-boot.s.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MeowOS.bin.dir\build.make CMakeFiles/MeowOS.bin.dir/boot.s.obj
-.PHONY : boot.s.obj
-
-gdt.obj: gdt.cpp.obj
-.PHONY : gdt.obj
-
-# target to build an object file
-gdt.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MeowOS.bin.dir\build.make CMakeFiles/MeowOS.bin.dir/gdt.cpp.obj
-.PHONY : gdt.cpp.obj
-
-gdt.i: gdt.cpp.i
-.PHONY : gdt.i
-
-# target to preprocess a source file
-gdt.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MeowOS.bin.dir\build.make CMakeFiles/MeowOS.bin.dir/gdt.cpp.i
-.PHONY : gdt.cpp.i
-
-gdt.s: gdt.cpp.s
-.PHONY : gdt.s
-
-# target to generate assembly for a file
-gdt.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MeowOS.bin.dir\build.make CMakeFiles/MeowOS.bin.dir/gdt.cpp.s
-.PHONY : gdt.cpp.s
-
-idt.obj: idt.cpp.obj
-.PHONY : idt.obj
-
-# target to build an object file
-idt.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MeowOS.bin.dir\build.make CMakeFiles/MeowOS.bin.dir/idt.cpp.obj
-.PHONY : idt.cpp.obj
-
-idt.i: idt.cpp.i
-.PHONY : idt.i
-
-# target to preprocess a source file
-idt.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MeowOS.bin.dir\build.make CMakeFiles/MeowOS.bin.dir/idt.cpp.i
-.PHONY : idt.cpp.i
-
-idt.s: idt.cpp.s
-.PHONY : idt.s
-
-# target to generate assembly for a file
-idt.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MeowOS.bin.dir\build.make CMakeFiles/MeowOS.bin.dir/idt.cpp.s
-.PHONY : idt.cpp.s
-
-interrupts.obj: interrupts.s.obj
+interrupts.obj: interrupts.cpp.obj
 .PHONY : interrupts.obj
 
 # target to build an object file
-interrupts.s.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MeowOS.bin.dir\build.make CMakeFiles/MeowOS.bin.dir/interrupts.s.obj
-.PHONY : interrupts.s.obj
+interrupts.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/interrupts.cpp.obj
+.PHONY : interrupts.cpp.obj
 
-kernel.obj: kernel.cpp.obj
-.PHONY : kernel.obj
-
-# target to build an object file
-kernel.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MeowOS.bin.dir\build.make CMakeFiles/MeowOS.bin.dir/kernel.cpp.obj
-.PHONY : kernel.cpp.obj
-
-kernel.i: kernel.cpp.i
-.PHONY : kernel.i
+interrupts.i: interrupts.cpp.i
+.PHONY : interrupts.i
 
 # target to preprocess a source file
-kernel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MeowOS.bin.dir\build.make CMakeFiles/MeowOS.bin.dir/kernel.cpp.i
-.PHONY : kernel.cpp.i
+interrupts.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/interrupts.cpp.i
+.PHONY : interrupts.cpp.i
 
-kernel.s: kernel.cpp.s
-.PHONY : kernel.s
+interrupts.s: interrupts.cpp.s
+.PHONY : interrupts.s
 
 # target to generate assembly for a file
-kernel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MeowOS.bin.dir\build.make CMakeFiles/MeowOS.bin.dir/kernel.cpp.s
-.PHONY : kernel.cpp.s
+interrupts.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/interrupts.cpp.s
+.PHONY : interrupts.cpp.s
 
-keyboard.obj: keyboard.cpp.obj
-.PHONY : keyboard.obj
+isr_exception_stubs.obj: isr_exception_stubs.asm.obj
+.PHONY : isr_exception_stubs.obj
 
 # target to build an object file
-keyboard.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MeowOS.bin.dir\build.make CMakeFiles/MeowOS.bin.dir/keyboard.cpp.obj
-.PHONY : keyboard.cpp.obj
+isr_exception_stubs.asm.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/isr_exception_stubs.asm.obj
+.PHONY : isr_exception_stubs.asm.obj
 
-keyboard.i: keyboard.cpp.i
-.PHONY : keyboard.i
+kernel_main.obj: kernel_main.cpp.obj
+.PHONY : kernel_main.obj
+
+# target to build an object file
+kernel_main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/kernel_main.cpp.obj
+.PHONY : kernel_main.cpp.obj
+
+kernel_main.i: kernel_main.cpp.i
+.PHONY : kernel_main.i
 
 # target to preprocess a source file
-keyboard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MeowOS.bin.dir\build.make CMakeFiles/MeowOS.bin.dir/keyboard.cpp.i
-.PHONY : keyboard.cpp.i
+kernel_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/kernel_main.cpp.i
+.PHONY : kernel_main.cpp.i
 
-keyboard.s: keyboard.cpp.s
-.PHONY : keyboard.s
+kernel_main.s: kernel_main.cpp.s
+.PHONY : kernel_main.s
 
 # target to generate assembly for a file
-keyboard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MeowOS.bin.dir\build.make CMakeFiles/MeowOS.bin.dir/keyboard.cpp.s
-.PHONY : keyboard.cpp.s
+kernel_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/kernel_main.cpp.s
+.PHONY : kernel_main.cpp.s
+
+shell_engine.obj: shell_engine.cpp.obj
+.PHONY : shell_engine.obj
+
+# target to build an object file
+shell_engine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/shell_engine.cpp.obj
+.PHONY : shell_engine.cpp.obj
+
+shell_engine.i: shell_engine.cpp.i
+.PHONY : shell_engine.i
+
+# target to preprocess a source file
+shell_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/shell_engine.cpp.i
+.PHONY : shell_engine.cpp.i
+
+shell_engine.s: shell_engine.cpp.s
+.PHONY : shell_engine.s
+
+# target to generate assembly for a file
+shell_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/shell_engine.cpp.s
+.PHONY : shell_engine.cpp.s
+
+vga_driver.obj: vga_driver.cpp.obj
+.PHONY : vga_driver.obj
+
+# target to build an object file
+vga_driver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/vga_driver.cpp.obj
+.PHONY : vga_driver.cpp.obj
+
+vga_driver.i: vga_driver.cpp.i
+.PHONY : vga_driver.i
+
+# target to preprocess a source file
+vga_driver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/vga_driver.cpp.i
+.PHONY : vga_driver.cpp.i
+
+vga_driver.s: vga_driver.cpp.s
+.PHONY : vga_driver.s
+
+# target to generate assembly for a file
+vga_driver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/vga_driver.cpp.s
+.PHONY : vga_driver.cpp.s
 
 # Help Target
 help:
@@ -248,21 +240,20 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... MeowOS.bin
-	@echo ... boot.obj
-	@echo ... gdt.obj
-	@echo ... gdt.i
-	@echo ... gdt.s
-	@echo ... idt.obj
-	@echo ... idt.i
-	@echo ... idt.s
+	@echo ... kernel.bin
 	@echo ... interrupts.obj
-	@echo ... kernel.obj
-	@echo ... kernel.i
-	@echo ... kernel.s
-	@echo ... keyboard.obj
-	@echo ... keyboard.i
-	@echo ... keyboard.s
+	@echo ... interrupts.i
+	@echo ... interrupts.s
+	@echo ... isr_exception_stubs.obj
+	@echo ... kernel_main.obj
+	@echo ... kernel_main.i
+	@echo ... kernel_main.s
+	@echo ... shell_engine.obj
+	@echo ... shell_engine.i
+	@echo ... shell_engine.s
+	@echo ... vga_driver.obj
+	@echo ... vga_driver.i
+	@echo ... vga_driver.s
 .PHONY : help
 
 

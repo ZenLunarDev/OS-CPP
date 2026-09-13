@@ -1,28 +1,28 @@
-ENTRY(_start)
+ENTRY(kernel_main)
 
 SECTIONS
 {
     . = 1M;
 
-    .text : ALIGN(4K)
+    .text BLOCK(4K) : ALIGN(4K)
     {
-        KEEP(*(.multiboot))
-        *(.text*)
+        *(.multiboot)    /* <--- วาง Multiboot Header ไว้จุดแรกสุด */
+        *(.text)
     }
 
-    .rodata : ALIGN(4K)
+    .rodata BLOCK(4K) : ALIGN(4K)
     {
-        *(.rodata*)
+        *(.rodata)
     }
 
-    .data : ALIGN(4K)
+    .data BLOCK(4K) : ALIGN(4K)
     {
-        *(.data*)
+        *(.data)
     }
 
-    .bss : ALIGN(4K)
+    .bss BLOCK(4K) : ALIGN(4K)
     {
         *(COMMON)
-        *(.bss*)
+        *(.bss)
     }
 }

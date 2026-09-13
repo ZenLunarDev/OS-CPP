@@ -1,3 +1,3 @@
-C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/MeowOS.bin.dir
+C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/kernel.bin.dir
 C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/edit_cache.dir
 C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/rebuild_cache.dir
