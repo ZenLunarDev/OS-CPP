@@ -34,6 +34,8 @@ set(SOURCES
         paging.cpp
         heap.cpp
         kernel_main.cpp
+        task.cpp
+        task_switch.asm
 )
 
 add_executable(kernel.bin ${SOURCES})
