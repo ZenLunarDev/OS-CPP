@@ -74,14 +74,47 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/user_programs.dir/clean
 clean: CMakeFiles/kernel.bin.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/user_programs.dir
+
+# All Build rule for target.
+CMakeFiles/user_programs.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\user_programs.dir\build.make CMakeFiles/user_programs.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\user_programs.dir\build.make CMakeFiles/user_programs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Lunar\CLionProjects\MeowOS\build\CMakeFiles --progress-num=22,23 "Built target user_programs"
+.PHONY : CMakeFiles/user_programs.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/user_programs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lunar\CLionProjects\MeowOS\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/user_programs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lunar\CLionProjects\MeowOS\build\CMakeFiles 0
+.PHONY : CMakeFiles/user_programs.dir/rule
+
+# Convenience name for target.
+user_programs: CMakeFiles/user_programs.dir/rule
+.PHONY : user_programs
+
+# codegen rule for target.
+CMakeFiles/user_programs.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\user_programs.dir\build.make CMakeFiles/user_programs.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Lunar\CLionProjects\MeowOS\build\CMakeFiles --progress-num=22,23 "Finished codegen for target user_programs"
+.PHONY : CMakeFiles/user_programs.dir/codegen
+
+# clean rule for target.
+CMakeFiles/user_programs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\user_programs.dir\build.make CMakeFiles/user_programs.dir/clean
+.PHONY : CMakeFiles/user_programs.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/kernel.bin.dir
 
 # All Build rule for target.
-CMakeFiles/kernel.bin.dir/all:
+CMakeFiles/kernel.bin.dir/all: CMakeFiles/user_programs.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Lunar\CLionProjects\MeowOS\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target kernel.bin"
@@ -89,7 +122,7 @@ CMakeFiles/kernel.bin.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/kernel.bin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lunar\CLionProjects\MeowOS\build\CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lunar\CLionProjects\MeowOS\build\CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/kernel.bin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lunar\CLionProjects\MeowOS\build\CMakeFiles 0
 .PHONY : CMakeFiles/kernel.bin.dir/rule
@@ -99,7 +132,7 @@ kernel.bin: CMakeFiles/kernel.bin.dir/rule
 .PHONY : kernel.bin
 
 # codegen rule for target.
-CMakeFiles/kernel.bin.dir/codegen:
+CMakeFiles/kernel.bin.dir/codegen: CMakeFiles/user_programs.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/codegen
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Lunar\CLionProjects\MeowOS\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Finished codegen for target kernel.bin"
 .PHONY : CMakeFiles/kernel.bin.dir/codegen

@@ -116,6 +116,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named user_programs
+
+# Build rule for target.
+user_programs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 user_programs
+.PHONY : user_programs
+
+# fast build rule for target.
+user_programs/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\user_programs.dir\build.make CMakeFiles/user_programs.dir/build
+.PHONY : user_programs/fast
+
+#=============================================================================
 # Target rules for targets named kernel.bin
 
 # Build rule for target.
@@ -536,6 +549,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... user_programs
 	@echo ... kernel.bin
 	@echo ... src/arch/x86/boot.obj
 	@echo ... src/arch/x86/interrupts.obj
