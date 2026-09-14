@@ -128,6 +128,14 @@ kernel.bin/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/build
 .PHONY : kernel.bin/fast
 
+src/arch/x86/boot.obj: src/arch/x86/boot.asm.obj
+.PHONY : src/arch/x86/boot.obj
+
+# target to build an object file
+src/arch/x86/boot.asm.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/arch/x86/boot.asm.obj
+.PHONY : src/arch/x86/boot.asm.obj
+
 src/arch/x86/interrupts.obj: src/arch/x86/interrupts.asm.obj
 .PHONY : src/arch/x86/interrupts.obj
 
@@ -159,78 +167,6 @@ src/arch/x86/user_mode.obj: src/arch/x86/user_mode.asm.obj
 src/arch/x86/user_mode.asm.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/arch/x86/user_mode.asm.obj
 .PHONY : src/arch/x86/user_mode.asm.obj
-
-src/drivers/keyboard.obj: src/drivers/keyboard.c.obj
-.PHONY : src/drivers/keyboard.obj
-
-# target to build an object file
-src/drivers/keyboard.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard.c.obj
-.PHONY : src/drivers/keyboard.c.obj
-
-src/drivers/keyboard.i: src/drivers/keyboard.c.i
-.PHONY : src/drivers/keyboard.i
-
-# target to preprocess a source file
-src/drivers/keyboard.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard.c.i
-.PHONY : src/drivers/keyboard.c.i
-
-src/drivers/keyboard.s: src/drivers/keyboard.c.s
-.PHONY : src/drivers/keyboard.s
-
-# target to generate assembly for a file
-src/drivers/keyboard.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard.c.s
-.PHONY : src/drivers/keyboard.c.s
-
-src/drivers/keyboard.obj: src/drivers/keyboard.cpp.obj
-.PHONY : src/drivers/keyboard.obj
-
-# target to build an object file
-src/drivers/keyboard.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard.cpp.obj
-.PHONY : src/drivers/keyboard.cpp.obj
-
-src/drivers/keyboard.i: src/drivers/keyboard.cpp.i
-.PHONY : src/drivers/keyboard.i
-
-# target to preprocess a source file
-src/drivers/keyboard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard.cpp.i
-.PHONY : src/drivers/keyboard.cpp.i
-
-src/drivers/keyboard.s: src/drivers/keyboard.cpp.s
-.PHONY : src/drivers/keyboard.s
-
-# target to generate assembly for a file
-src/drivers/keyboard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard.cpp.s
-.PHONY : src/drivers/keyboard.cpp.s
-
-src/drivers/keyboard_driver.obj: src/drivers/keyboard_driver.cpp.obj
-.PHONY : src/drivers/keyboard_driver.obj
-
-# target to build an object file
-src/drivers/keyboard_driver.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard_driver.cpp.obj
-.PHONY : src/drivers/keyboard_driver.cpp.obj
-
-src/drivers/keyboard_driver.i: src/drivers/keyboard_driver.cpp.i
-.PHONY : src/drivers/keyboard_driver.i
-
-# target to preprocess a source file
-src/drivers/keyboard_driver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard_driver.cpp.i
-.PHONY : src/drivers/keyboard_driver.cpp.i
-
-src/drivers/keyboard_driver.s: src/drivers/keyboard_driver.cpp.s
-.PHONY : src/drivers/keyboard_driver.s
-
-# target to generate assembly for a file
-src/drivers/keyboard_driver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard_driver.cpp.s
-.PHONY : src/drivers/keyboard_driver.cpp.s
 
 src/drivers/rtc.obj: src/drivers/rtc.cpp.obj
 .PHONY : src/drivers/rtc.obj
@@ -375,30 +311,6 @@ src/kernel/gdt.s: src/kernel/gdt.cpp.s
 src/kernel/gdt.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/gdt.cpp.s
 .PHONY : src/kernel/gdt.cpp.s
-
-src/kernel/idt.obj: src/kernel/idt.cpp.obj
-.PHONY : src/kernel/idt.obj
-
-# target to build an object file
-src/kernel/idt.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/idt.cpp.obj
-.PHONY : src/kernel/idt.cpp.obj
-
-src/kernel/idt.i: src/kernel/idt.cpp.i
-.PHONY : src/kernel/idt.i
-
-# target to preprocess a source file
-src/kernel/idt.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/idt.cpp.i
-.PHONY : src/kernel/idt.cpp.i
-
-src/kernel/idt.s: src/kernel/idt.cpp.s
-.PHONY : src/kernel/idt.s
-
-# target to generate assembly for a file
-src/kernel/idt.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/idt.cpp.s
-.PHONY : src/kernel/idt.cpp.s
 
 src/kernel/interrupts.obj: src/kernel/interrupts.cpp.obj
 .PHONY : src/kernel/interrupts.obj
@@ -625,19 +537,11 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... kernel.bin
+	@echo ... src/arch/x86/boot.obj
 	@echo ... src/arch/x86/interrupts.obj
 	@echo ... src/arch/x86/syscall_stub.obj
 	@echo ... src/arch/x86/task_switch.obj
 	@echo ... src/arch/x86/user_mode.obj
-	@echo ... src/drivers/keyboard.obj
-	@echo ... src/drivers/keyboard.i
-	@echo ... src/drivers/keyboard.s
-	@echo ... src/drivers/keyboard.obj
-	@echo ... src/drivers/keyboard.i
-	@echo ... src/drivers/keyboard.s
-	@echo ... src/drivers/keyboard_driver.obj
-	@echo ... src/drivers/keyboard_driver.i
-	@echo ... src/drivers/keyboard_driver.s
 	@echo ... src/drivers/rtc.obj
 	@echo ... src/drivers/rtc.i
 	@echo ... src/drivers/rtc.s
@@ -656,9 +560,6 @@ help:
 	@echo ... src/kernel/gdt.obj
 	@echo ... src/kernel/gdt.i
 	@echo ... src/kernel/gdt.s
-	@echo ... src/kernel/idt.obj
-	@echo ... src/kernel/idt.i
-	@echo ... src/kernel/idt.s
 	@echo ... src/kernel/interrupts.obj
 	@echo ... src/kernel/interrupts.i
 	@echo ... src/kernel/interrupts.s

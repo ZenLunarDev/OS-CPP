@@ -28,6 +28,9 @@ events:
     names:
       - "mingw32-make.exe"
     candidate_directories:
+      - "C:/Program Files/Git/mingw64/bin/"
+      - "C:/Program Files/Git/usr/bin/"
+      - "C:/Users/Lunar/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -46,6 +49,7 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/"
       - "C:/Users/Lunar/.cargo/bin/"
       - "C:/Users/Lunar/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Lunar/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -55,12 +59,19 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2026.2.2/bin/"
       - "C:/Users/Lunar/AppData/Roaming/npm/"
       - "C:/Program Files/qemu/"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/"
       - "/REGISTRY-NOTFOUND/bin/"
       - "c:/MinGW/bin/"
       - "/MinGW/bin/"
       - "/REGISTRY-NOTFOUND/MinGW/bin/"
     searched_directories:
+      - "C:/Program Files/Git/mingw64/bin/mingw32-make.exe.com"
+      - "C:/Program Files/Git/mingw64/bin/mingw32-make.exe"
+      - "C:/Program Files/Git/usr/bin/mingw32-make.exe.com"
+      - "C:/Program Files/Git/usr/bin/mingw32-make.exe"
+      - "C:/Users/Lunar/bin/mingw32-make.exe.com"
+      - "C:/Users/Lunar/bin/mingw32-make.exe"
       - "C:/Windows/System32/mingw32-make.exe.com"
       - "C:/Windows/System32/mingw32-make.exe"
       - "C:/Windows/mingw32-make.exe.com"
@@ -95,12 +106,15 @@ events:
     found: "C:/msys64/ucrt64/bin/mingw32-make.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -108,18 +122,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -134,7 +149,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -162,12 +178,15 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -175,18 +194,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -201,7 +221,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -249,12 +270,15 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -262,18 +286,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -288,7 +313,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -333,6 +359,9 @@ events:
       - "ar"
     candidate_directories:
       - "C:/i686-elf-tools-windows/bin/"
+      - "C:/Program Files/Git/mingw64/bin/"
+      - "C:/Program Files/Git/usr/bin/"
+      - "C:/Users/Lunar/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -351,6 +380,7 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/"
       - "C:/Users/Lunar/.cargo/bin/"
       - "C:/Users/Lunar/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Lunar/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -360,18 +390,22 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2026.2.2/bin/"
       - "C:/Users/Lunar/AppData/Roaming/npm/"
       - "C:/Program Files/qemu/"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/"
     searched_directories:
       - "C:/i686-elf-tools-windows/bin/i686-elf-ar.com"
     found: "C:/i686-elf-tools-windows/bin/i686-elf-ar.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -379,18 +413,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -405,7 +440,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -428,6 +464,9 @@ events:
       - "ranlib"
     candidate_directories:
       - "C:/i686-elf-tools-windows/bin/"
+      - "C:/Program Files/Git/mingw64/bin/"
+      - "C:/Program Files/Git/usr/bin/"
+      - "C:/Users/Lunar/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -446,6 +485,7 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/"
       - "C:/Users/Lunar/.cargo/bin/"
       - "C:/Users/Lunar/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Lunar/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -455,18 +495,22 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2026.2.2/bin/"
       - "C:/Users/Lunar/AppData/Roaming/npm/"
       - "C:/Program Files/qemu/"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/"
     searched_directories:
       - "C:/i686-elf-tools-windows/bin/i686-elf-ranlib.com"
     found: "C:/i686-elf-tools-windows/bin/i686-elf-ranlib.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -474,18 +518,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -500,7 +545,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -523,6 +569,9 @@ events:
       - "strip"
     candidate_directories:
       - "C:/i686-elf-tools-windows/bin/"
+      - "C:/Program Files/Git/mingw64/bin/"
+      - "C:/Program Files/Git/usr/bin/"
+      - "C:/Users/Lunar/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -541,6 +590,7 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/"
       - "C:/Users/Lunar/.cargo/bin/"
       - "C:/Users/Lunar/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Lunar/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -550,18 +600,22 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2026.2.2/bin/"
       - "C:/Users/Lunar/AppData/Roaming/npm/"
       - "C:/Program Files/qemu/"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/"
     searched_directories:
       - "C:/i686-elf-tools-windows/bin/i686-elf-strip.com"
     found: "C:/i686-elf-tools-windows/bin/i686-elf-strip.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -569,18 +623,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -595,7 +650,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -618,6 +674,9 @@ events:
       - "ld"
     candidate_directories:
       - "C:/i686-elf-tools-windows/bin/"
+      - "C:/Program Files/Git/mingw64/bin/"
+      - "C:/Program Files/Git/usr/bin/"
+      - "C:/Users/Lunar/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -636,6 +695,7 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/"
       - "C:/Users/Lunar/.cargo/bin/"
       - "C:/Users/Lunar/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Lunar/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -645,18 +705,22 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2026.2.2/bin/"
       - "C:/Users/Lunar/AppData/Roaming/npm/"
       - "C:/Program Files/qemu/"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/"
     searched_directories:
       - "C:/i686-elf-tools-windows/bin/i686-elf-ld.com"
     found: "C:/i686-elf-tools-windows/bin/i686-elf-ld.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -664,18 +728,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -690,7 +755,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -713,6 +779,9 @@ events:
       - "nm"
     candidate_directories:
       - "C:/i686-elf-tools-windows/bin/"
+      - "C:/Program Files/Git/mingw64/bin/"
+      - "C:/Program Files/Git/usr/bin/"
+      - "C:/Users/Lunar/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -731,6 +800,7 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/"
       - "C:/Users/Lunar/.cargo/bin/"
       - "C:/Users/Lunar/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Lunar/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -740,18 +810,22 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2026.2.2/bin/"
       - "C:/Users/Lunar/AppData/Roaming/npm/"
       - "C:/Program Files/qemu/"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/"
     searched_directories:
       - "C:/i686-elf-tools-windows/bin/i686-elf-nm.com"
     found: "C:/i686-elf-tools-windows/bin/i686-elf-nm.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -759,18 +833,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -785,7 +860,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -808,6 +884,9 @@ events:
       - "objdump"
     candidate_directories:
       - "C:/i686-elf-tools-windows/bin/"
+      - "C:/Program Files/Git/mingw64/bin/"
+      - "C:/Program Files/Git/usr/bin/"
+      - "C:/Users/Lunar/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -826,6 +905,7 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/"
       - "C:/Users/Lunar/.cargo/bin/"
       - "C:/Users/Lunar/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Lunar/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -835,18 +915,22 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2026.2.2/bin/"
       - "C:/Users/Lunar/AppData/Roaming/npm/"
       - "C:/Program Files/qemu/"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/"
     searched_directories:
       - "C:/i686-elf-tools-windows/bin/i686-elf-objdump.com"
     found: "C:/i686-elf-tools-windows/bin/i686-elf-objdump.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -854,18 +938,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -880,7 +965,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -903,6 +989,9 @@ events:
       - "objcopy"
     candidate_directories:
       - "C:/i686-elf-tools-windows/bin/"
+      - "C:/Program Files/Git/mingw64/bin/"
+      - "C:/Program Files/Git/usr/bin/"
+      - "C:/Users/Lunar/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -921,6 +1010,7 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/"
       - "C:/Users/Lunar/.cargo/bin/"
       - "C:/Users/Lunar/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Lunar/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -930,18 +1020,22 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2026.2.2/bin/"
       - "C:/Users/Lunar/AppData/Roaming/npm/"
       - "C:/Program Files/qemu/"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/"
     searched_directories:
       - "C:/i686-elf-tools-windows/bin/i686-elf-objcopy.com"
     found: "C:/i686-elf-tools-windows/bin/i686-elf-objcopy.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -949,18 +1043,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -975,7 +1070,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -998,6 +1094,9 @@ events:
       - "readelf"
     candidate_directories:
       - "C:/i686-elf-tools-windows/bin/"
+      - "C:/Program Files/Git/mingw64/bin/"
+      - "C:/Program Files/Git/usr/bin/"
+      - "C:/Users/Lunar/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1016,6 +1115,7 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/"
       - "C:/Users/Lunar/.cargo/bin/"
       - "C:/Users/Lunar/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Lunar/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -1025,18 +1125,22 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2026.2.2/bin/"
       - "C:/Users/Lunar/AppData/Roaming/npm/"
       - "C:/Program Files/qemu/"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/"
     searched_directories:
       - "C:/i686-elf-tools-windows/bin/i686-elf-readelf.com"
     found: "C:/i686-elf-tools-windows/bin/i686-elf-readelf.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -1044,18 +1148,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -1070,7 +1175,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1093,6 +1199,9 @@ events:
       - "dlltool"
     candidate_directories:
       - "C:/i686-elf-tools-windows/bin/"
+      - "C:/Program Files/Git/mingw64/bin/"
+      - "C:/Program Files/Git/usr/bin/"
+      - "C:/Users/Lunar/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1111,6 +1220,7 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/"
       - "C:/Users/Lunar/.cargo/bin/"
       - "C:/Users/Lunar/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Lunar/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -1120,11 +1230,21 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2026.2.2/bin/"
       - "C:/Users/Lunar/AppData/Roaming/npm/"
       - "C:/Program Files/qemu/"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/"
     searched_directories:
       - "C:/i686-elf-tools-windows/bin/i686-elf-dlltool.com"
       - "C:/i686-elf-tools-windows/bin/i686-elf-dlltool.exe"
       - "C:/i686-elf-tools-windows/bin/i686-elf-dlltool"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-dlltool.com"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-dlltool.exe"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-dlltool"
+      - "C:/Program Files/Git/usr/bin/i686-elf-dlltool.com"
+      - "C:/Program Files/Git/usr/bin/i686-elf-dlltool.exe"
+      - "C:/Program Files/Git/usr/bin/i686-elf-dlltool"
+      - "C:/Users/Lunar/bin/i686-elf-dlltool.com"
+      - "C:/Users/Lunar/bin/i686-elf-dlltool.exe"
+      - "C:/Users/Lunar/bin/i686-elf-dlltool"
       - "C:/Windows/System32/i686-elf-dlltool.com"
       - "C:/Windows/System32/i686-elf-dlltool.exe"
       - "C:/Windows/System32/i686-elf-dlltool"
@@ -1179,6 +1299,9 @@ events:
       - "C:/ProgramData/chocolatey/bin/i686-elf-dlltool.com"
       - "C:/ProgramData/chocolatey/bin/i686-elf-dlltool.exe"
       - "C:/ProgramData/chocolatey/bin/i686-elf-dlltool"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-dlltool.com"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-dlltool.exe"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-dlltool"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-dlltool.com"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-dlltool.exe"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-dlltool"
@@ -1206,12 +1329,24 @@ events:
       - "C:/Program Files/qemu/i686-elf-dlltool.com"
       - "C:/Program Files/qemu/i686-elf-dlltool.exe"
       - "C:/Program Files/qemu/i686-elf-dlltool"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-dlltool.com"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-dlltool.exe"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-dlltool"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-dlltool.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-dlltool.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-dlltool"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-dlltool.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-dlltool.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-dlltool"
       - "C:/i686-elf-tools-windows/bin/dlltool.com"
       - "C:/i686-elf-tools-windows/bin/dlltool.exe"
       - "C:/i686-elf-tools-windows/bin/dlltool"
+      - "C:/Program Files/Git/mingw64/bin/dlltool.com"
+      - "C:/Program Files/Git/mingw64/bin/dlltool.exe"
+      - "C:/Program Files/Git/mingw64/bin/dlltool"
+      - "C:/Program Files/Git/usr/bin/dlltool.com"
+      - "C:/Program Files/Git/usr/bin/dlltool.exe"
+      - "C:/Program Files/Git/usr/bin/dlltool"
+      - "C:/Users/Lunar/bin/dlltool.com"
+      - "C:/Users/Lunar/bin/dlltool.exe"
+      - "C:/Users/Lunar/bin/dlltool"
       - "C:/Windows/System32/dlltool.com"
       - "C:/Windows/System32/dlltool.exe"
       - "C:/Windows/System32/dlltool"
@@ -1261,12 +1396,15 @@ events:
     found: "C:/msys64/ucrt64/bin/dlltool.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -1274,18 +1412,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -1300,7 +1439,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1323,6 +1463,9 @@ events:
       - "addr2line"
     candidate_directories:
       - "C:/i686-elf-tools-windows/bin/"
+      - "C:/Program Files/Git/mingw64/bin/"
+      - "C:/Program Files/Git/usr/bin/"
+      - "C:/Users/Lunar/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1341,6 +1484,7 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/"
       - "C:/Users/Lunar/.cargo/bin/"
       - "C:/Users/Lunar/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Lunar/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -1350,18 +1494,22 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2026.2.2/bin/"
       - "C:/Users/Lunar/AppData/Roaming/npm/"
       - "C:/Program Files/qemu/"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/"
     searched_directories:
       - "C:/i686-elf-tools-windows/bin/i686-elf-addr2line.com"
     found: "C:/i686-elf-tools-windows/bin/i686-elf-addr2line.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -1369,18 +1517,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -1395,7 +1544,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1418,6 +1568,9 @@ events:
       - "tapi"
     candidate_directories:
       - "C:/i686-elf-tools-windows/bin/"
+      - "C:/Program Files/Git/mingw64/bin/"
+      - "C:/Program Files/Git/usr/bin/"
+      - "C:/Users/Lunar/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1436,6 +1589,7 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/"
       - "C:/Users/Lunar/.cargo/bin/"
       - "C:/Users/Lunar/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Lunar/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -1445,11 +1599,21 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2026.2.2/bin/"
       - "C:/Users/Lunar/AppData/Roaming/npm/"
       - "C:/Program Files/qemu/"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/"
     searched_directories:
       - "C:/i686-elf-tools-windows/bin/i686-elf-tapi.com"
       - "C:/i686-elf-tools-windows/bin/i686-elf-tapi.exe"
       - "C:/i686-elf-tools-windows/bin/i686-elf-tapi"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-tapi.com"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-tapi.exe"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-tapi"
+      - "C:/Program Files/Git/usr/bin/i686-elf-tapi.com"
+      - "C:/Program Files/Git/usr/bin/i686-elf-tapi.exe"
+      - "C:/Program Files/Git/usr/bin/i686-elf-tapi"
+      - "C:/Users/Lunar/bin/i686-elf-tapi.com"
+      - "C:/Users/Lunar/bin/i686-elf-tapi.exe"
+      - "C:/Users/Lunar/bin/i686-elf-tapi"
       - "C:/Windows/System32/i686-elf-tapi.com"
       - "C:/Windows/System32/i686-elf-tapi.exe"
       - "C:/Windows/System32/i686-elf-tapi"
@@ -1504,6 +1668,9 @@ events:
       - "C:/ProgramData/chocolatey/bin/i686-elf-tapi.com"
       - "C:/ProgramData/chocolatey/bin/i686-elf-tapi.exe"
       - "C:/ProgramData/chocolatey/bin/i686-elf-tapi"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-tapi.com"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-tapi.exe"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-tapi"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-tapi.com"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-tapi.exe"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-tapi"
@@ -1531,12 +1698,24 @@ events:
       - "C:/Program Files/qemu/i686-elf-tapi.com"
       - "C:/Program Files/qemu/i686-elf-tapi.exe"
       - "C:/Program Files/qemu/i686-elf-tapi"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-tapi.com"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-tapi.exe"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-tapi"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-tapi.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-tapi.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-tapi"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-tapi.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-tapi.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-tapi"
       - "C:/i686-elf-tools-windows/bin/tapi.com"
       - "C:/i686-elf-tools-windows/bin/tapi.exe"
       - "C:/i686-elf-tools-windows/bin/tapi"
+      - "C:/Program Files/Git/mingw64/bin/tapi.com"
+      - "C:/Program Files/Git/mingw64/bin/tapi.exe"
+      - "C:/Program Files/Git/mingw64/bin/tapi"
+      - "C:/Program Files/Git/usr/bin/tapi.com"
+      - "C:/Program Files/Git/usr/bin/tapi.exe"
+      - "C:/Program Files/Git/usr/bin/tapi"
+      - "C:/Users/Lunar/bin/tapi.com"
+      - "C:/Users/Lunar/bin/tapi.exe"
+      - "C:/Users/Lunar/bin/tapi"
       - "C:/Windows/System32/tapi.com"
       - "C:/Windows/System32/tapi.exe"
       - "C:/Windows/System32/tapi"
@@ -1591,6 +1770,9 @@ events:
       - "C:/ProgramData/chocolatey/bin/tapi.com"
       - "C:/ProgramData/chocolatey/bin/tapi.exe"
       - "C:/ProgramData/chocolatey/bin/tapi"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/tapi.com"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/tapi.exe"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/tapi"
       - "C:/Users/Lunar/.cargo/bin/tapi.com"
       - "C:/Users/Lunar/.cargo/bin/tapi.exe"
       - "C:/Users/Lunar/.cargo/bin/tapi"
@@ -1618,18 +1800,24 @@ events:
       - "C:/Program Files/qemu/tapi.com"
       - "C:/Program Files/qemu/tapi.exe"
       - "C:/Program Files/qemu/tapi"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/tapi.com"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/tapi.exe"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/tapi"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/tapi.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/tapi.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/tapi"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/tapi.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/tapi.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/tapi"
     found: false
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -1637,18 +1825,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -1663,7 +1852,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1688,6 +1878,9 @@ events:
       - "i686-elf-gcc-ar"
     candidate_directories:
       - "C:/i686-elf-tools-windows/bin/"
+      - "C:/Program Files/Git/mingw64/bin/"
+      - "C:/Program Files/Git/usr/bin/"
+      - "C:/Users/Lunar/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1706,6 +1899,7 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/"
       - "C:/Users/Lunar/.cargo/bin/"
       - "C:/Users/Lunar/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Lunar/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -1715,11 +1909,21 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2026.2.2/bin/"
       - "C:/Users/Lunar/AppData/Roaming/npm/"
       - "C:/Program Files/qemu/"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/"
     searched_directories:
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar-15.2.com"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar-15.2.exe"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar-15.2"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar-15.2.com"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar-15.2.exe"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar-15.2"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar-15.2.com"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar-15.2.exe"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar-15.2"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar-15.2.com"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar-15.2.exe"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar-15.2"
       - "C:/Windows/System32/i686-elf-gcc-ar-15.2.com"
       - "C:/Windows/System32/i686-elf-gcc-ar-15.2.exe"
       - "C:/Windows/System32/i686-elf-gcc-ar-15.2"
@@ -1774,6 +1978,9 @@ events:
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar-15.2.com"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar-15.2.exe"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar-15.2"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar-15.2.com"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar-15.2.exe"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar-15.2"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar-15.2.com"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar-15.2.exe"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar-15.2"
@@ -1801,12 +2008,24 @@ events:
       - "C:/Program Files/qemu/i686-elf-gcc-ar-15.2.com"
       - "C:/Program Files/qemu/i686-elf-gcc-ar-15.2.exe"
       - "C:/Program Files/qemu/i686-elf-gcc-ar-15.2"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar-15.2.com"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar-15.2.exe"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar-15.2"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar-15.2.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar-15.2.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar-15.2"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar-15.2.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar-15.2.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar-15.2"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar-15.com"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar-15.exe"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar-15"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar-15.com"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar-15.exe"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar-15"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar-15.com"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar-15.exe"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar-15"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar-15.com"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar-15.exe"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar-15"
       - "C:/Windows/System32/i686-elf-gcc-ar-15.com"
       - "C:/Windows/System32/i686-elf-gcc-ar-15.exe"
       - "C:/Windows/System32/i686-elf-gcc-ar-15"
@@ -1861,6 +2080,9 @@ events:
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar-15.com"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar-15.exe"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar-15"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar-15.com"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar-15.exe"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar-15"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar-15.com"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar-15.exe"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar-15"
@@ -1888,12 +2110,24 @@ events:
       - "C:/Program Files/qemu/i686-elf-gcc-ar-15.com"
       - "C:/Program Files/qemu/i686-elf-gcc-ar-15.exe"
       - "C:/Program Files/qemu/i686-elf-gcc-ar-15"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar-15.com"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar-15.exe"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar-15"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar-15.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar-15.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar-15"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar-15.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar-15.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar-15"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar15.com"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar15.exe"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar15"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar15.com"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar15.exe"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar15"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar15.com"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar15.exe"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar15"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar15.com"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar15.exe"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar15"
       - "C:/Windows/System32/i686-elf-gcc-ar15.com"
       - "C:/Windows/System32/i686-elf-gcc-ar15.exe"
       - "C:/Windows/System32/i686-elf-gcc-ar15"
@@ -1948,6 +2182,9 @@ events:
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar15.com"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar15.exe"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar15"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar15.com"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar15.exe"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar15"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar15.com"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar15.exe"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar15"
@@ -1975,19 +2212,25 @@ events:
       - "C:/Program Files/qemu/i686-elf-gcc-ar15.com"
       - "C:/Program Files/qemu/i686-elf-gcc-ar15.exe"
       - "C:/Program Files/qemu/i686-elf-gcc-ar15"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar15.com"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar15.exe"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar15"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar15.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar15.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar15"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar15.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar15.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar15"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar.com"
     found: "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -1995,18 +2238,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -2021,7 +2265,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -2046,6 +2291,9 @@ events:
       - "i686-elf-gcc-ranlib"
     candidate_directories:
       - "C:/i686-elf-tools-windows/bin/"
+      - "C:/Program Files/Git/mingw64/bin/"
+      - "C:/Program Files/Git/usr/bin/"
+      - "C:/Users/Lunar/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -2064,6 +2312,7 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/"
       - "C:/Users/Lunar/.cargo/bin/"
       - "C:/Users/Lunar/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Lunar/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -2073,11 +2322,21 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2026.2.2/bin/"
       - "C:/Users/Lunar/AppData/Roaming/npm/"
       - "C:/Program Files/qemu/"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/"
     searched_directories:
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib-15.2.com"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib-15.2.exe"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib-15.2"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib-15.2.com"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib-15.2.exe"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib-15.2"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib-15.2.com"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib-15.2.exe"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib-15.2"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib-15.2.com"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib-15.2.exe"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib-15.2"
       - "C:/Windows/System32/i686-elf-gcc-ranlib-15.2.com"
       - "C:/Windows/System32/i686-elf-gcc-ranlib-15.2.exe"
       - "C:/Windows/System32/i686-elf-gcc-ranlib-15.2"
@@ -2132,6 +2391,9 @@ events:
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib-15.2.com"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib-15.2.exe"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib-15.2"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib-15.2.com"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib-15.2.exe"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib-15.2"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib-15.2.com"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib-15.2.exe"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib-15.2"
@@ -2159,12 +2421,24 @@ events:
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib-15.2.com"
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib-15.2.exe"
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib-15.2"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib-15.2.com"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib-15.2.exe"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib-15.2"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib-15.2.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib-15.2.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib-15.2"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib-15.2.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib-15.2.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib-15.2"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib-15.com"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib-15.exe"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib-15"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib-15.com"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib-15.exe"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib-15"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib-15.com"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib-15.exe"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib-15"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib-15.com"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib-15.exe"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib-15"
       - "C:/Windows/System32/i686-elf-gcc-ranlib-15.com"
       - "C:/Windows/System32/i686-elf-gcc-ranlib-15.exe"
       - "C:/Windows/System32/i686-elf-gcc-ranlib-15"
@@ -2219,6 +2493,9 @@ events:
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib-15.com"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib-15.exe"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib-15"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib-15.com"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib-15.exe"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib-15"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib-15.com"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib-15.exe"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib-15"
@@ -2246,12 +2523,24 @@ events:
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib-15.com"
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib-15.exe"
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib-15"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib-15.com"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib-15.exe"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib-15"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib-15.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib-15.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib-15"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib-15.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib-15.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib-15"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib15.com"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib15.exe"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib15"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib15.com"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib15.exe"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib15"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib15.com"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib15.exe"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib15"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib15.com"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib15.exe"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib15"
       - "C:/Windows/System32/i686-elf-gcc-ranlib15.com"
       - "C:/Windows/System32/i686-elf-gcc-ranlib15.exe"
       - "C:/Windows/System32/i686-elf-gcc-ranlib15"
@@ -2306,6 +2595,9 @@ events:
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib15.com"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib15.exe"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib15"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib15.com"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib15.exe"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib15"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib15.com"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib15.exe"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib15"
@@ -2333,19 +2625,25 @@ events:
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib15.com"
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib15.exe"
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib15"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib15.com"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib15.exe"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib15"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib15.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib15.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib15"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib15.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib15.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib15"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib.com"
     found: "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -2353,18 +2651,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -2379,7 +2678,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -2407,12 +2707,15 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -2420,18 +2723,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -2446,7 +2750,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -2496,12 +2801,15 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -2509,18 +2817,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -2535,7 +2844,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -2582,6 +2892,9 @@ events:
       - "i686-elf-gcc-ar"
     candidate_directories:
       - "C:/i686-elf-tools-windows/bin/"
+      - "C:/Program Files/Git/mingw64/bin/"
+      - "C:/Program Files/Git/usr/bin/"
+      - "C:/Users/Lunar/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -2600,6 +2913,7 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/"
       - "C:/Users/Lunar/.cargo/bin/"
       - "C:/Users/Lunar/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Lunar/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -2609,11 +2923,21 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2026.2.2/bin/"
       - "C:/Users/Lunar/AppData/Roaming/npm/"
       - "C:/Program Files/qemu/"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/"
     searched_directories:
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar-15.2.com"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar-15.2.exe"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar-15.2"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar-15.2.com"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar-15.2.exe"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar-15.2"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar-15.2.com"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar-15.2.exe"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar-15.2"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar-15.2.com"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar-15.2.exe"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar-15.2"
       - "C:/Windows/System32/i686-elf-gcc-ar-15.2.com"
       - "C:/Windows/System32/i686-elf-gcc-ar-15.2.exe"
       - "C:/Windows/System32/i686-elf-gcc-ar-15.2"
@@ -2668,6 +2992,9 @@ events:
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar-15.2.com"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar-15.2.exe"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar-15.2"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar-15.2.com"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar-15.2.exe"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar-15.2"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar-15.2.com"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar-15.2.exe"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar-15.2"
@@ -2695,12 +3022,24 @@ events:
       - "C:/Program Files/qemu/i686-elf-gcc-ar-15.2.com"
       - "C:/Program Files/qemu/i686-elf-gcc-ar-15.2.exe"
       - "C:/Program Files/qemu/i686-elf-gcc-ar-15.2"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar-15.2.com"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar-15.2.exe"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar-15.2"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar-15.2.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar-15.2.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar-15.2"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar-15.2.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar-15.2.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar-15.2"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar-15.com"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar-15.exe"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar-15"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar-15.com"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar-15.exe"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar-15"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar-15.com"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar-15.exe"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar-15"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar-15.com"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar-15.exe"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar-15"
       - "C:/Windows/System32/i686-elf-gcc-ar-15.com"
       - "C:/Windows/System32/i686-elf-gcc-ar-15.exe"
       - "C:/Windows/System32/i686-elf-gcc-ar-15"
@@ -2755,6 +3094,9 @@ events:
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar-15.com"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar-15.exe"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar-15"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar-15.com"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar-15.exe"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar-15"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar-15.com"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar-15.exe"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar-15"
@@ -2782,12 +3124,24 @@ events:
       - "C:/Program Files/qemu/i686-elf-gcc-ar-15.com"
       - "C:/Program Files/qemu/i686-elf-gcc-ar-15.exe"
       - "C:/Program Files/qemu/i686-elf-gcc-ar-15"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar-15.com"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar-15.exe"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar-15"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar-15.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar-15.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar-15"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar-15.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar-15.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar-15"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar15.com"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar15.exe"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar15"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar15.com"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar15.exe"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ar15"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar15.com"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar15.exe"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ar15"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar15.com"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar15.exe"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ar15"
       - "C:/Windows/System32/i686-elf-gcc-ar15.com"
       - "C:/Windows/System32/i686-elf-gcc-ar15.exe"
       - "C:/Windows/System32/i686-elf-gcc-ar15"
@@ -2842,6 +3196,9 @@ events:
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar15.com"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar15.exe"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ar15"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar15.com"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar15.exe"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ar15"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar15.com"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar15.exe"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ar15"
@@ -2869,19 +3226,25 @@ events:
       - "C:/Program Files/qemu/i686-elf-gcc-ar15.com"
       - "C:/Program Files/qemu/i686-elf-gcc-ar15.exe"
       - "C:/Program Files/qemu/i686-elf-gcc-ar15"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar15.com"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar15.exe"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ar15"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar15.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar15.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ar15"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar15.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar15.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ar15"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar.com"
     found: "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ar.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -2889,18 +3252,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -2915,7 +3279,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -2940,6 +3305,9 @@ events:
       - "i686-elf-gcc-ranlib"
     candidate_directories:
       - "C:/i686-elf-tools-windows/bin/"
+      - "C:/Program Files/Git/mingw64/bin/"
+      - "C:/Program Files/Git/usr/bin/"
+      - "C:/Users/Lunar/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -2958,6 +3326,7 @@ events:
       - "C:/msys64/ucrt64/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/"
       - "C:/Users/Lunar/.cargo/bin/"
       - "C:/Users/Lunar/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Lunar/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -2967,11 +3336,21 @@ events:
       - "C:/Program Files/JetBrains/IntelliJ IDEA 2026.2.2/bin/"
       - "C:/Users/Lunar/AppData/Roaming/npm/"
       - "C:/Program Files/qemu/"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/"
     searched_directories:
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib-15.2.com"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib-15.2.exe"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib-15.2"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib-15.2.com"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib-15.2.exe"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib-15.2"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib-15.2.com"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib-15.2.exe"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib-15.2"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib-15.2.com"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib-15.2.exe"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib-15.2"
       - "C:/Windows/System32/i686-elf-gcc-ranlib-15.2.com"
       - "C:/Windows/System32/i686-elf-gcc-ranlib-15.2.exe"
       - "C:/Windows/System32/i686-elf-gcc-ranlib-15.2"
@@ -3026,6 +3405,9 @@ events:
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib-15.2.com"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib-15.2.exe"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib-15.2"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib-15.2.com"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib-15.2.exe"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib-15.2"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib-15.2.com"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib-15.2.exe"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib-15.2"
@@ -3053,12 +3435,24 @@ events:
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib-15.2.com"
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib-15.2.exe"
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib-15.2"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib-15.2.com"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib-15.2.exe"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib-15.2"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib-15.2.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib-15.2.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib-15.2"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib-15.2.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib-15.2.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib-15.2"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib-15.com"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib-15.exe"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib-15"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib-15.com"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib-15.exe"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib-15"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib-15.com"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib-15.exe"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib-15"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib-15.com"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib-15.exe"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib-15"
       - "C:/Windows/System32/i686-elf-gcc-ranlib-15.com"
       - "C:/Windows/System32/i686-elf-gcc-ranlib-15.exe"
       - "C:/Windows/System32/i686-elf-gcc-ranlib-15"
@@ -3113,6 +3507,9 @@ events:
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib-15.com"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib-15.exe"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib-15"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib-15.com"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib-15.exe"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib-15"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib-15.com"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib-15.exe"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib-15"
@@ -3140,12 +3537,24 @@ events:
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib-15.com"
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib-15.exe"
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib-15"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib-15.com"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib-15.exe"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib-15"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib-15.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib-15.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib-15"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib-15.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib-15.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib-15"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib15.com"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib15.exe"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib15"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib15.com"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib15.exe"
+      - "C:/Program Files/Git/mingw64/bin/i686-elf-gcc-ranlib15"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib15.com"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib15.exe"
+      - "C:/Program Files/Git/usr/bin/i686-elf-gcc-ranlib15"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib15.com"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib15.exe"
+      - "C:/Users/Lunar/bin/i686-elf-gcc-ranlib15"
       - "C:/Windows/System32/i686-elf-gcc-ranlib15.com"
       - "C:/Windows/System32/i686-elf-gcc-ranlib15.exe"
       - "C:/Windows/System32/i686-elf-gcc-ranlib15"
@@ -3200,6 +3609,9 @@ events:
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib15.com"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib15.exe"
       - "C:/ProgramData/chocolatey/bin/i686-elf-gcc-ranlib15"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib15.com"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib15.exe"
+      - "C:/Users/Lunar/AppData/Local/hermes/bin/i686-elf-gcc-ranlib15"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib15.com"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib15.exe"
       - "C:/Users/Lunar/.cargo/bin/i686-elf-gcc-ranlib15"
@@ -3227,19 +3639,25 @@ events:
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib15.com"
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib15.exe"
       - "C:/Program Files/qemu/i686-elf-gcc-ranlib15"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib15.com"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib15.exe"
-      - "C:/Users/Lunar/.platformio/penv/Scripts/i686-elf-gcc-ranlib15"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib15.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib15.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe/ripgrep-15.2.0-x86_64-pc-windows-msvc/i686-elf-gcc-ranlib15"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib15.com"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib15.exe"
+      - "C:/Users/Lunar/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/i686-elf-gcc-ranlib15"
       - "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib.com"
     found: "C:/i686-elf-tools-windows/bin/i686-elf-gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files\\Git\\mingw64\\bin"
+        - "C:\\Program Files\\Git\\usr\\bin"
+        - "C:\\Users\\Lunar\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -3247,18 +3665,19 @@ events:
         - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
         - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit"
         - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\nodejs"
         - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Users\\Lunar\\AppData\\Local\\hermes\\bin"
         - "C:\\Users\\Lunar\\.cargo\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0"
+        - "C:\\WINDOWS\\System32\\OpenSSH"
+        - "C:\\Program Files\\dotnet"
         - "C:\\WINDOWS\\AtlasModules"
         - "C:\\WINDOWS\\AtlasModules\\Tools"
         - "C:\\WINDOWS\\AtlasModules\\Scripts"
@@ -3273,7 +3692,8 @@ events:
         - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.2.2\\bin"
         - "C:\\Users\\Lunar\\AppData\\Roaming\\npm"
         - "C:\\Program Files\\qemu"
-        - "C:\\Users\\Lunar\\.platformio\\penv\\Scripts"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BurntSushi.ripgrep.MSVC_Microsoft.Winget.Source_8wekyb3d8bbwe\\ripgrep-15.2.0-x86_64-pc-windows-msvc"
+        - "C:\\Users\\Lunar\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-9.0.1-full_build\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -3550,8 +3970,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-xw4ff8"
-      binary: "C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-xw4ff8"
+      source: "C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-7jyshu"
+      binary: "C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-7jyshu"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -3561,13 +3981,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-xw4ff8'
+        Change Dir: 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-7jyshu'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_b7a5c/fast
-        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b7a5c.dir\\build.make CMakeFiles/cmTC_b7a5c.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-xw4ff8'
-        Building C object CMakeFiles/cmTC_b7a5c.dir/CMakeCCompilerABI.c.obj
-        C:\\i686-elf-tools-windows\\bin\\i686-elf-gcc.exe   -v -o CMakeFiles\\cmTC_b7a5c.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_e08b6/fast
+        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_e08b6.dir\\build.make CMakeFiles/cmTC_e08b6.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-7jyshu'
+        Building C object CMakeFiles/cmTC_e08b6.dir/CMakeCCompilerABI.c.obj
+        C:\\i686-elf-tools-windows\\bin\\i686-elf-gcc.exe   -v -o CMakeFiles\\cmTC_e08b6.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"
         Using built-in specs.
         COLLECT_GCC=C:\\i686-elf-tools-windows\\bin\\i686-elf-gcc.exe
         Target: i686-elf
@@ -3575,8 +3995,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 15.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b7a5c.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_b7a5c.dir\\'
-         C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/cc1.exe -quiet -v -iprefix C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_b7a5c.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=pentiumpro -version -o C:\\Users\\Lunar\\AppData\\Local\\Temp\\ccU4EptJ.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_e08b6.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_e08b6.dir\\'
+         C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/cc1.exe -quiet -v -iprefix C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_e08b6.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=pentiumpro -version -o C:\\Users\\Lunar\\AppData\\Local\\Temp\\ccEwqeC5.s
         GNU C23 (GCC) version 15.2.0 (i686-elf)
         	compiled by GNU C version 11.5.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -3593,17 +4013,17 @@ events:
          C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/include-fixed
         End of search list.
         Compiler executable checksum: 97ae621b47c3c7b0de8eef96c3850ce2
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b7a5c.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_b7a5c.dir\\'
-         C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/as.exe -o CMakeFiles\\cmTC_b7a5c.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Lunar\\AppData\\Local\\Temp\\ccU4EptJ.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_e08b6.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_e08b6.dir\\'
+         C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/as.exe -o CMakeFiles\\cmTC_e08b6.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Lunar\\AppData\\Local\\Temp\\ccEwqeC5.s
         COMPILER_PATH=C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/;C:/i686-elf-tools-windows/bin/../libexec/gcc/;C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/
         LIBRARY_PATH=C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/;C:/i686-elf-tools-windows/bin/../lib/gcc/;C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b7a5c.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_b7a5c.dir\\CMakeCCompilerABI.c.'
-        Linking C static library libcmTC_b7a5c.a
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_b7a5c.dir\\cmake_clean_target.cmake
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_b7a5c.dir\\link.txt --verbose=1
-        C:\\i686-elf-tools-windows\\bin\\i686-elf-ar.exe qc libcmTC_b7a5c.a CMakeFiles/cmTC_b7a5c.dir/CMakeCCompilerABI.c.obj
-        C:\\i686-elf-tools-windows\\bin\\i686-elf-ranlib.exe libcmTC_b7a5c.a
-        mingw32-make[1]: Leaving directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-xw4ff8'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_e08b6.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_e08b6.dir\\CMakeCCompilerABI.c.'
+        Linking C static library libcmTC_e08b6.a
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_e08b6.dir\\cmake_clean_target.cmake
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_e08b6.dir\\link.txt --verbose=1
+        C:\\i686-elf-tools-windows\\bin\\i686-elf-ar.exe qc libcmTC_e08b6.a CMakeFiles/cmTC_e08b6.dir/CMakeCCompilerABI.c.obj
+        C:\\i686-elf-tools-windows\\bin\\i686-elf-ranlib.exe libcmTC_e08b6.a
+        mingw32-make[1]: Leaving directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-7jyshu'
         
       exitCode: 0
   -
@@ -3634,13 +4054,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-xw4ff8']
+        ignore line: [Change Dir: 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-7jyshu']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_b7a5c/fast]
-        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b7a5c.dir\\build.make CMakeFiles/cmTC_b7a5c.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-xw4ff8']
-        ignore line: [Building C object CMakeFiles/cmTC_b7a5c.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-gcc.exe   -v -o CMakeFiles\\cmTC_b7a5c.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_e08b6/fast]
+        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_e08b6.dir\\build.make CMakeFiles/cmTC_e08b6.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-7jyshu']
+        ignore line: [Building C object CMakeFiles/cmTC_e08b6.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-gcc.exe   -v -o CMakeFiles\\cmTC_e08b6.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\i686-elf-tools-windows\\bin\\i686-elf-gcc.exe]
         ignore line: [Target: i686-elf]
@@ -3648,8 +4068,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 15.2.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b7a5c.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_b7a5c.dir\\']
-        ignore line: [ C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/cc1.exe -quiet -v -iprefix C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_b7a5c.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=pentiumpro -version -o C:\\Users\\Lunar\\AppData\\Local\\Temp\\ccU4EptJ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_e08b6.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_e08b6.dir\\']
+        ignore line: [ C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/cc1.exe -quiet -v -iprefix C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_e08b6.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=pentiumpro -version -o C:\\Users\\Lunar\\AppData\\Local\\Temp\\ccEwqeC5.s]
         ignore line: [GNU C23 (GCC) version 15.2.0 (i686-elf)]
         ignore line: [	compiled by GNU C version 11.5.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -3666,21 +4086,21 @@ events:
         ignore line: [ C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 97ae621b47c3c7b0de8eef96c3850ce2]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b7a5c.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_b7a5c.dir\\']
-        ignore line: [ C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/as.exe -o CMakeFiles\\cmTC_b7a5c.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Lunar\\AppData\\Local\\Temp\\ccU4EptJ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_e08b6.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_e08b6.dir\\']
+        ignore line: [ C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/as.exe -o CMakeFiles\\cmTC_e08b6.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Lunar\\AppData\\Local\\Temp\\ccEwqeC5.s]
         ignore line: [COMPILER_PATH=C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/]
         ignore line: [C:/i686-elf-tools-windows/bin/../libexec/gcc/]
         ignore line: [C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/]
         ignore line: [LIBRARY_PATH=C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/]
         ignore line: [C:/i686-elf-tools-windows/bin/../lib/gcc/]
         ignore line: [C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b7a5c.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_b7a5c.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C static library libcmTC_b7a5c.a]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_b7a5c.dir\\cmake_clean_target.cmake]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_b7a5c.dir\\link.txt --verbose=1]
-        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-ar.exe qc libcmTC_b7a5c.a CMakeFiles/cmTC_b7a5c.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-ranlib.exe libcmTC_b7a5c.a]
-        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-xw4ff8']
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_e08b6.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_e08b6.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C static library libcmTC_e08b6.a]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_e08b6.dir\\cmake_clean_target.cmake]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_e08b6.dir\\link.txt --verbose=1]
+        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-ar.exe qc libcmTC_e08b6.a CMakeFiles/cmTC_e08b6.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-ranlib.exe libcmTC_e08b6.a]
+        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-7jyshu']
         ignore line: []
         ignore line: []
         implicit libs: []
@@ -3698,8 +4118,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-ysddah"
-      binary: "C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-ysddah"
+      source: "C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-8oqr0c"
+      binary: "C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-8oqr0c"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -3710,13 +4130,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-ysddah'
+        Change Dir: 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-8oqr0c'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_d566b/fast
-        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d566b.dir\\build.make CMakeFiles/cmTC_d566b.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-ysddah'
-        Building CXX object CMakeFiles/cmTC_d566b.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\i686-elf-tools-windows\\bin\\i686-elf-g++.exe   -v -o CMakeFiles\\cmTC_d566b.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_210da/fast
+        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_210da.dir\\build.make CMakeFiles/cmTC_210da.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-8oqr0c'
+        Building CXX object CMakeFiles/cmTC_210da.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\i686-elf-tools-windows\\bin\\i686-elf-g++.exe   -v -o CMakeFiles\\cmTC_210da.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=C:\\i686-elf-tools-windows\\bin\\i686-elf-g++.exe
         Target: i686-elf
@@ -3724,8 +4144,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 15.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_d566b.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_d566b.dir\\'
-         C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/cc1plus.exe -quiet -v -iprefix C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_d566b.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=pentiumpro -version -o C:\\Users\\Lunar\\AppData\\Local\\Temp\\ccnb9tXd.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_210da.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_210da.dir\\'
+         C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/cc1plus.exe -quiet -v -iprefix C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_210da.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=pentiumpro -version -o C:\\Users\\Lunar\\AppData\\Local\\Temp\\ccFWe4eG.s
         GNU C++17 (GCC) version 15.2.0 (i686-elf)
         	compiled by GNU C version 11.5.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -3748,17 +4168,17 @@ events:
          C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/include-fixed
         End of search list.
         Compiler executable checksum: 6d6684f919aab6484d3f2fe0879da214
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_d566b.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_d566b.dir\\'
-         C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/as.exe -o CMakeFiles\\cmTC_d566b.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Lunar\\AppData\\Local\\Temp\\ccnb9tXd.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_210da.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_210da.dir\\'
+         C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/as.exe -o CMakeFiles\\cmTC_210da.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Lunar\\AppData\\Local\\Temp\\ccFWe4eG.s
         COMPILER_PATH=C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/;C:/i686-elf-tools-windows/bin/../libexec/gcc/;C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/
         LIBRARY_PATH=C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/;C:/i686-elf-tools-windows/bin/../lib/gcc/;C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_d566b.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_d566b.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX static library libcmTC_d566b.a
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_d566b.dir\\cmake_clean_target.cmake
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_d566b.dir\\link.txt --verbose=1
-        C:\\i686-elf-tools-windows\\bin\\i686-elf-ar.exe qc libcmTC_d566b.a CMakeFiles/cmTC_d566b.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\i686-elf-tools-windows\\bin\\i686-elf-ranlib.exe libcmTC_d566b.a
-        mingw32-make[1]: Leaving directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-ysddah'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_210da.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_210da.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX static library libcmTC_210da.a
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_210da.dir\\cmake_clean_target.cmake
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_210da.dir\\link.txt --verbose=1
+        C:\\i686-elf-tools-windows\\bin\\i686-elf-ar.exe qc libcmTC_210da.a CMakeFiles/cmTC_210da.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\i686-elf-tools-windows\\bin\\i686-elf-ranlib.exe libcmTC_210da.a
+        mingw32-make[1]: Leaving directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-8oqr0c'
         
       exitCode: 0
   -
@@ -3789,13 +4209,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-ysddah']
+        ignore line: [Change Dir: 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-8oqr0c']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_d566b/fast]
-        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d566b.dir\\build.make CMakeFiles/cmTC_d566b.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-ysddah']
-        ignore line: [Building CXX object CMakeFiles/cmTC_d566b.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-g++.exe   -v -o CMakeFiles\\cmTC_d566b.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_210da/fast]
+        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_210da.dir\\build.make CMakeFiles/cmTC_210da.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-8oqr0c']
+        ignore line: [Building CXX object CMakeFiles/cmTC_210da.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-g++.exe   -v -o CMakeFiles\\cmTC_210da.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\i686-elf-tools-windows\\bin\\i686-elf-g++.exe]
         ignore line: [Target: i686-elf]
@@ -3803,8 +4223,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 15.2.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_d566b.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_d566b.dir\\']
-        ignore line: [ C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/cc1plus.exe -quiet -v -iprefix C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_d566b.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=pentiumpro -version -o C:\\Users\\Lunar\\AppData\\Local\\Temp\\ccnb9tXd.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_210da.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_210da.dir\\']
+        ignore line: [ C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/cc1plus.exe -quiet -v -iprefix C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_210da.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=pentiumpro -version -o C:\\Users\\Lunar\\AppData\\Local\\Temp\\ccFWe4eG.s]
         ignore line: [GNU C++17 (GCC) version 15.2.0 (i686-elf)]
         ignore line: [	compiled by GNU C version 11.5.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -3827,21 +4247,21 @@ events:
         ignore line: [ C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 6d6684f919aab6484d3f2fe0879da214]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_d566b.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_d566b.dir\\']
-        ignore line: [ C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/as.exe -o CMakeFiles\\cmTC_d566b.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Lunar\\AppData\\Local\\Temp\\ccnb9tXd.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_210da.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_210da.dir\\']
+        ignore line: [ C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/as.exe -o CMakeFiles\\cmTC_210da.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Lunar\\AppData\\Local\\Temp\\ccFWe4eG.s]
         ignore line: [COMPILER_PATH=C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/]
         ignore line: [C:/i686-elf-tools-windows/bin/../libexec/gcc/]
         ignore line: [C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/]
         ignore line: [LIBRARY_PATH=C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/]
         ignore line: [C:/i686-elf-tools-windows/bin/../lib/gcc/]
         ignore line: [C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_d566b.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_d566b.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX static library libcmTC_d566b.a]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_d566b.dir\\cmake_clean_target.cmake]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_d566b.dir\\link.txt --verbose=1]
-        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-ar.exe qc libcmTC_d566b.a CMakeFiles/cmTC_d566b.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-ranlib.exe libcmTC_d566b.a]
-        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-ysddah']
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_210da.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_210da.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX static library libcmTC_210da.a]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_210da.dir\\cmake_clean_target.cmake]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_210da.dir\\link.txt --verbose=1]
+        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-ar.exe qc libcmTC_210da.a CMakeFiles/cmTC_210da.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-ranlib.exe libcmTC_210da.a]
+        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-8oqr0c']
         ignore line: []
         ignore line: []
         implicit libs: []
