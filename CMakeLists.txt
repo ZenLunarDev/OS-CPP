@@ -24,20 +24,24 @@ set(CMAKE_ASM_NASM_FLAGS "${CMAKE_ASM_NASM_FLAGS} ${KERNEL_ASM_FLAGS}")
 
 set(SOURCES
         isr_exception_stubs.asm
+        syscall_stub.asm
+        task_switch.asm
+        user_mode.asm
+        gdt_flush.asm
+        gdt.cpp
         interrupts.cpp
         isr.cpp
         timer.cpp
         rtc.cpp
+        task.cpp
+        syscall.cpp
         shell_engine.cpp
         vga_driver.cpp
         pmm.cpp
         paging.cpp
         heap.cpp
         kernel_main.cpp
-        task.cpp
-        task_switch.asm
 )
-
 add_executable(kernel.bin ${SOURCES})
 
 set(LINKER_SCRIPT "${CMAKE_CURRENT_SOURCE_DIR}/linker.ld")

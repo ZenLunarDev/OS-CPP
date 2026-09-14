@@ -1,28 +1,59 @@
+// gdt.cpp
 #include "gdt.h"
 
-static GdtEntry gdt_entries[3];
-static GdtPtr   gdt_ptr;
+struct GDTEntry {
+    uint16_t limit_low;
+    uint16_t base_low;
+    uint8_t  base_middle;
+    uint8_t  access;
+    uint8_t  granularity;
+    uint8_t  base_high;
+} __attribute__((packed));
 
-extern "C" void gdt_flush_asm(uint32_t gdt_ptr_addr);
+struct GDTPtr {
+    uint16_t limit;
+    uint32_t base;
+} __attribute__((packed));
 
-void GDT::set_gate(int32_t num, uint32_t base, uint32_t limit, uint8_t access, uint8_t gran) {
-    gdt_entries[num].base_low    = (base & 0xFFFF);
-    gdt_entries[num].base_middle = (base >> 16) & 0xFF;
-    gdt_entries[num].base_high   = (base >> 24) & 0xFF;
+static GDTEntry gdt[6];
+static GDTPtr gdt_ptr;
+static TSSEntry tss_entry;
 
-    gdt_entries[num].limit_low   = (limit & 0xFFFF);
-    gdt_entries[num].granularity = (limit >> 16) & 0x0F;
-    gdt_entries[num].granularity |= gran & 0xF0;
-    gdt_entries[num].access      = access;
+extern "C" void gdt_flush(uint32_t);
+extern "C" void tss_flush();
+
+static void gdt_set_gate(int32_t num, uint32_t base, uint32_t limit, uint8_t access, uint8_t gran) {
+    gdt[num].base_low    = (base & 0xFFFF);
+    gdt[num].base_middle = (base >> 16) & 0xFF;
+    gdt[num].base_high   = (base >> 24) & 0xFF;
+    gdt[num].limit_low   = (limit & 0xFFFF);
+    gdt[num].granularity = (limit >> 16) & 0x0F;
+    gdt[num].granularity |= gran & 0xF0;
+    gdt[num].access      = access;
 }
 
-void GDT::init() {
-    gdt_ptr.limit = (sizeof(GdtEntry) * 3) - 1;
-    gdt_ptr.base  = (uint32_t)&gdt_entries;
+extern "C" void set_kernel_stack(uint32_t stack) {
+    tss_entry.esp0 = stack;
+}
 
-    set_gate(0, 0, 0, 0, 0);                // Null segment
-    set_gate(1, 0, 0xFFFFFFFF, 0x9A, 0xCF); // Kernel Code Segment (0x08)
-    set_gate(2, 0, 0xFFFFFFFF, 0x92, 0xCF); // Kernel Data Segment (0x10)
+extern "C" void init_gdt() {
+    gdt_ptr.limit = (sizeof(GDTEntry) * 6) - 1;
+    gdt_ptr.base  = (uint32_t)&gdt;
 
-    gdt_flush_asm((uint32_t)&gdt_ptr);
+    gdt_set_gate(0, 0, 0, 0, 0);                // Null segment
+    gdt_set_gate(1, 0, 0xFFFFFFFF, 0x9A, 0xCF); // Kernel Code (0x08)
+    gdt_set_gate(2, 0, 0xFFFFFFFF, 0x92, 0xCF); // Kernel Data (0x10)
+    gdt_set_gate(3, 0, 0xFFFFFFFF, 0xFA, 0xCF); // User Code (0x1B)
+    gdt_set_gate(4, 0, 0xFFFFFFFF, 0xF2, 0xCF); // User Data (0x23)
+
+    // TSS Setup
+    uint32_t base = (uint32_t)&tss_entry;
+    uint32_t limit = sizeof(tss_entry);
+    gdt_set_gate(5, base, limit, 0xE9, 0x00);
+
+    tss_entry.ss0 = 0x10;
+    tss_entry.esp0 = 0x0;
+
+    gdt_flush((uint32_t)&gdt_ptr);
+    tss_flush();
 }

@@ -23,6 +23,7 @@ extern "C" void isr14();
 
 extern "C" void irq0_stub();
 extern "C" void irq1_stub();
+extern "C" void syscall_stub();
 
 static void pic_remap() {
     asm volatile("outb %0, %1" :: "a"((uint8_t)0x11), "Nd"((uint16_t)0x20));
@@ -56,15 +57,18 @@ extern "C" void init_interrupts() {
 
     pic_remap();
 
-    // Register CPU Exceptions
+    // Register CPU Exceptions (DPL = 0)
     idt_set_gate(0,  reinterpret_cast<uint32_t>(isr0),  0x08, 0x8E);
     idt_set_gate(6,  reinterpret_cast<uint32_t>(isr6),  0x08, 0x8E);
     idt_set_gate(13, reinterpret_cast<uint32_t>(isr13), 0x08, 0x8E);
     idt_set_gate(14, reinterpret_cast<uint32_t>(isr14), 0x08, 0x8E);
 
-    // Register Hardware IRQs
+    // Register Hardware IRQs (DPL = 0)
     idt_set_gate(0x20, reinterpret_cast<uint32_t>(irq0_stub), 0x08, 0x8E);
     idt_set_gate(0x21, reinterpret_cast<uint32_t>(irq1_stub), 0x08, 0x8E);
+
+    // Register System Call Vector 0x80 (DPL = 3 -> 0xEE)
+    idt_set_gate(0x80, reinterpret_cast<uint32_t>(syscall_stub), 0x08, 0xEE);
 
     asm volatile("lidt %0" :: "m"(idtp));
     asm volatile("sti");

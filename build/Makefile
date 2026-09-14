@@ -128,6 +128,38 @@ kernel.bin/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/build
 .PHONY : kernel.bin/fast
 
+gdt.obj: gdt.cpp.obj
+.PHONY : gdt.obj
+
+# target to build an object file
+gdt.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/gdt.cpp.obj
+.PHONY : gdt.cpp.obj
+
+gdt.i: gdt.cpp.i
+.PHONY : gdt.i
+
+# target to preprocess a source file
+gdt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/gdt.cpp.i
+.PHONY : gdt.cpp.i
+
+gdt.s: gdt.cpp.s
+.PHONY : gdt.s
+
+# target to generate assembly for a file
+gdt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/gdt.cpp.s
+.PHONY : gdt.cpp.s
+
+gdt_flush.obj: gdt_flush.asm.obj
+.PHONY : gdt_flush.obj
+
+# target to build an object file
+gdt_flush.asm.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/gdt_flush.asm.obj
+.PHONY : gdt_flush.asm.obj
+
 heap.obj: heap.cpp.obj
 .PHONY : heap.obj
 
@@ -328,6 +360,70 @@ shell_engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/shell_engine.cpp.s
 .PHONY : shell_engine.cpp.s
 
+syscall.obj: syscall.cpp.obj
+.PHONY : syscall.obj
+
+# target to build an object file
+syscall.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/syscall.cpp.obj
+.PHONY : syscall.cpp.obj
+
+syscall.i: syscall.cpp.i
+.PHONY : syscall.i
+
+# target to preprocess a source file
+syscall.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/syscall.cpp.i
+.PHONY : syscall.cpp.i
+
+syscall.s: syscall.cpp.s
+.PHONY : syscall.s
+
+# target to generate assembly for a file
+syscall.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/syscall.cpp.s
+.PHONY : syscall.cpp.s
+
+syscall_stub.obj: syscall_stub.asm.obj
+.PHONY : syscall_stub.obj
+
+# target to build an object file
+syscall_stub.asm.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/syscall_stub.asm.obj
+.PHONY : syscall_stub.asm.obj
+
+task.obj: task.cpp.obj
+.PHONY : task.obj
+
+# target to build an object file
+task.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/task.cpp.obj
+.PHONY : task.cpp.obj
+
+task.i: task.cpp.i
+.PHONY : task.i
+
+# target to preprocess a source file
+task.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/task.cpp.i
+.PHONY : task.cpp.i
+
+task.s: task.cpp.s
+.PHONY : task.s
+
+# target to generate assembly for a file
+task.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/task.cpp.s
+.PHONY : task.cpp.s
+
+task_switch.obj: task_switch.asm.obj
+.PHONY : task_switch.obj
+
+# target to build an object file
+task_switch.asm.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/task_switch.asm.obj
+.PHONY : task_switch.asm.obj
+
 timer.obj: timer.cpp.obj
 .PHONY : timer.obj
 
@@ -351,6 +447,14 @@ timer.s: timer.cpp.s
 timer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/timer.cpp.s
 .PHONY : timer.cpp.s
+
+user_mode.obj: user_mode.asm.obj
+.PHONY : user_mode.obj
+
+# target to build an object file
+user_mode.asm.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/user_mode.asm.obj
+.PHONY : user_mode.asm.obj
 
 vga_driver.obj: vga_driver.cpp.obj
 .PHONY : vga_driver.obj
@@ -385,6 +489,10 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... kernel.bin
+	@echo ... gdt.obj
+	@echo ... gdt.i
+	@echo ... gdt.s
+	@echo ... gdt_flush.obj
 	@echo ... heap.obj
 	@echo ... heap.i
 	@echo ... heap.s
@@ -410,9 +518,18 @@ help:
 	@echo ... shell_engine.obj
 	@echo ... shell_engine.i
 	@echo ... shell_engine.s
+	@echo ... syscall.obj
+	@echo ... syscall.i
+	@echo ... syscall.s
+	@echo ... syscall_stub.obj
+	@echo ... task.obj
+	@echo ... task.i
+	@echo ... task.s
+	@echo ... task_switch.obj
 	@echo ... timer.obj
 	@echo ... timer.i
 	@echo ... timer.s
+	@echo ... user_mode.obj
 	@echo ... vga_driver.obj
 	@echo ... vga_driver.i
 	@echo ... vga_driver.s
