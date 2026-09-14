@@ -1,4 +1,3 @@
-// gdt.cpp
 #include "gdt.h"
 
 struct GDTEntry {
@@ -38,7 +37,7 @@ extern "C" void set_kernel_stack(uint32_t stack) {
 
 extern "C" void init_gdt() {
     gdt_ptr.limit = (sizeof(GDTEntry) * 6) - 1;
-    gdt_ptr.base  = (uint32_t)&gdt;
+    gdt_ptr.base  = reinterpret_cast<uint32_t>(&gdt);
 
     gdt_set_gate(0, 0, 0, 0, 0);                // Null segment
     gdt_set_gate(1, 0, 0xFFFFFFFF, 0x9A, 0xCF); // Kernel Code (0x08)
@@ -46,14 +45,14 @@ extern "C" void init_gdt() {
     gdt_set_gate(3, 0, 0xFFFFFFFF, 0xFA, 0xCF); // User Code (0x1B)
     gdt_set_gate(4, 0, 0xFFFFFFFF, 0xF2, 0xCF); // User Data (0x23)
 
-    // TSS Setup
-    uint32_t base = (uint32_t)&tss_entry;
+    // TSS Entry Setup
+    uint32_t base = reinterpret_cast<uint32_t>(&tss_entry);
     uint32_t limit = sizeof(tss_entry);
     gdt_set_gate(5, base, limit, 0xE9, 0x00);
 
     tss_entry.ss0 = 0x10;
     tss_entry.esp0 = 0x0;
 
-    gdt_flush((uint32_t)&gdt_ptr);
+    gdt_flush(reinterpret_cast<uint32_t>(&gdt_ptr));
     tss_flush();
 }
