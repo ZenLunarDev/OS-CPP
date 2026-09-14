@@ -208,6 +208,30 @@ kernel_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/kernel_main.cpp.s
 .PHONY : kernel_main.cpp.s
 
+paging.obj: paging.cpp.obj
+.PHONY : paging.obj
+
+# target to build an object file
+paging.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/paging.cpp.obj
+.PHONY : paging.cpp.obj
+
+paging.i: paging.cpp.i
+.PHONY : paging.i
+
+# target to preprocess a source file
+paging.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/paging.cpp.i
+.PHONY : paging.cpp.i
+
+paging.s: paging.cpp.s
+.PHONY : paging.s
+
+# target to generate assembly for a file
+paging.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/paging.cpp.s
+.PHONY : paging.cpp.s
+
 pmm.obj: pmm.cpp.obj
 .PHONY : pmm.obj
 
@@ -256,6 +280,30 @@ shell_engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/shell_engine.cpp.s
 .PHONY : shell_engine.cpp.s
 
+timer.obj: timer.cpp.obj
+.PHONY : timer.obj
+
+# target to build an object file
+timer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/timer.cpp.obj
+.PHONY : timer.cpp.obj
+
+timer.i: timer.cpp.i
+.PHONY : timer.i
+
+# target to preprocess a source file
+timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/timer.cpp.i
+.PHONY : timer.cpp.i
+
+timer.s: timer.cpp.s
+.PHONY : timer.s
+
+# target to generate assembly for a file
+timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/timer.cpp.s
+.PHONY : timer.cpp.s
+
 vga_driver.obj: vga_driver.cpp.obj
 .PHONY : vga_driver.obj
 
@@ -299,12 +347,18 @@ help:
 	@echo ... kernel_main.obj
 	@echo ... kernel_main.i
 	@echo ... kernel_main.s
+	@echo ... paging.obj
+	@echo ... paging.i
+	@echo ... paging.s
 	@echo ... pmm.obj
 	@echo ... pmm.i
 	@echo ... pmm.s
 	@echo ... shell_engine.obj
 	@echo ... shell_engine.i
 	@echo ... shell_engine.s
+	@echo ... timer.obj
+	@echo ... timer.i
+	@echo ... timer.s
 	@echo ... vga_driver.obj
 	@echo ... vga_driver.i
 	@echo ... vga_driver.s

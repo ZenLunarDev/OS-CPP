@@ -25,9 +25,11 @@ set(CMAKE_ASM_NASM_FLAGS "${CMAKE_ASM_NASM_FLAGS} ${KERNEL_ASM_FLAGS}")
 set(SOURCES
         isr_exception_stubs.asm
         interrupts.cpp
+        timer.cpp
         shell_engine.cpp
         vga_driver.cpp
         pmm.cpp
+        paging.cpp
         heap.cpp
         kernel_main.cpp
 )
