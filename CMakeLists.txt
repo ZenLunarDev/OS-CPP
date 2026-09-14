@@ -32,6 +32,7 @@ set(SOURCES
         paging.cpp
         heap.cpp
         kernel_main.cpp
+        rtc.cpp
 )
 
 add_executable(kernel.bin ${SOURCES})

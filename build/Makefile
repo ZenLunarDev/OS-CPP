@@ -256,6 +256,30 @@ pmm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/pmm.cpp.s
 .PHONY : pmm.cpp.s
 
+rtc.obj: rtc.cpp.obj
+.PHONY : rtc.obj
+
+# target to build an object file
+rtc.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/rtc.cpp.obj
+.PHONY : rtc.cpp.obj
+
+rtc.i: rtc.cpp.i
+.PHONY : rtc.i
+
+# target to preprocess a source file
+rtc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/rtc.cpp.i
+.PHONY : rtc.cpp.i
+
+rtc.s: rtc.cpp.s
+.PHONY : rtc.s
+
+# target to generate assembly for a file
+rtc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/rtc.cpp.s
+.PHONY : rtc.cpp.s
+
 shell_engine.obj: shell_engine.cpp.obj
 .PHONY : shell_engine.obj
 
@@ -353,6 +377,9 @@ help:
 	@echo ... pmm.obj
 	@echo ... pmm.i
 	@echo ... pmm.s
+	@echo ... rtc.obj
+	@echo ... rtc.i
+	@echo ... rtc.s
 	@echo ... shell_engine.obj
 	@echo ... shell_engine.i
 	@echo ... shell_engine.s
