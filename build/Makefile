@@ -128,357 +128,509 @@ kernel.bin/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/build
 .PHONY : kernel.bin/fast
 
-gdt.obj: gdt.cpp.obj
-.PHONY : gdt.obj
+src/arch/x86/gdt_flush.obj: src/arch/x86/gdt_flush.asm.obj
+.PHONY : src/arch/x86/gdt_flush.obj
 
 # target to build an object file
-gdt.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/gdt.cpp.obj
-.PHONY : gdt.cpp.obj
+src/arch/x86/gdt_flush.asm.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/arch/x86/gdt_flush.asm.obj
+.PHONY : src/arch/x86/gdt_flush.asm.obj
 
-gdt.i: gdt.cpp.i
-.PHONY : gdt.i
+src/arch/x86/isr_exception_stubs.obj: src/arch/x86/isr_exception_stubs.asm.obj
+.PHONY : src/arch/x86/isr_exception_stubs.obj
+
+# target to build an object file
+src/arch/x86/isr_exception_stubs.asm.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/arch/x86/isr_exception_stubs.asm.obj
+.PHONY : src/arch/x86/isr_exception_stubs.asm.obj
+
+src/arch/x86/isr_stub.obj: src/arch/x86/isr_stub.asm.obj
+.PHONY : src/arch/x86/isr_stub.obj
+
+# target to build an object file
+src/arch/x86/isr_stub.asm.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/arch/x86/isr_stub.asm.obj
+.PHONY : src/arch/x86/isr_stub.asm.obj
+
+src/arch/x86/syscall_stub.obj: src/arch/x86/syscall_stub.asm.obj
+.PHONY : src/arch/x86/syscall_stub.obj
+
+# target to build an object file
+src/arch/x86/syscall_stub.asm.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/arch/x86/syscall_stub.asm.obj
+.PHONY : src/arch/x86/syscall_stub.asm.obj
+
+src/arch/x86/task_switch.obj: src/arch/x86/task_switch.asm.obj
+.PHONY : src/arch/x86/task_switch.obj
+
+# target to build an object file
+src/arch/x86/task_switch.asm.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/arch/x86/task_switch.asm.obj
+.PHONY : src/arch/x86/task_switch.asm.obj
+
+src/arch/x86/user_mode.obj: src/arch/x86/user_mode.asm.obj
+.PHONY : src/arch/x86/user_mode.obj
+
+# target to build an object file
+src/arch/x86/user_mode.asm.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/arch/x86/user_mode.asm.obj
+.PHONY : src/arch/x86/user_mode.asm.obj
+
+src/drivers/keyboard.obj: src/drivers/keyboard.c.obj
+.PHONY : src/drivers/keyboard.obj
+
+# target to build an object file
+src/drivers/keyboard.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard.c.obj
+.PHONY : src/drivers/keyboard.c.obj
+
+src/drivers/keyboard.i: src/drivers/keyboard.c.i
+.PHONY : src/drivers/keyboard.i
 
 # target to preprocess a source file
-gdt.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/gdt.cpp.i
-.PHONY : gdt.cpp.i
+src/drivers/keyboard.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard.c.i
+.PHONY : src/drivers/keyboard.c.i
 
-gdt.s: gdt.cpp.s
-.PHONY : gdt.s
+src/drivers/keyboard.s: src/drivers/keyboard.c.s
+.PHONY : src/drivers/keyboard.s
 
 # target to generate assembly for a file
-gdt.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/gdt.cpp.s
-.PHONY : gdt.cpp.s
+src/drivers/keyboard.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard.c.s
+.PHONY : src/drivers/keyboard.c.s
 
-gdt_flush.obj: gdt_flush.asm.obj
-.PHONY : gdt_flush.obj
-
-# target to build an object file
-gdt_flush.asm.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/gdt_flush.asm.obj
-.PHONY : gdt_flush.asm.obj
-
-heap.obj: heap.cpp.obj
-.PHONY : heap.obj
+src/drivers/keyboard.obj: src/drivers/keyboard.cpp.obj
+.PHONY : src/drivers/keyboard.obj
 
 # target to build an object file
-heap.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/heap.cpp.obj
-.PHONY : heap.cpp.obj
+src/drivers/keyboard.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard.cpp.obj
+.PHONY : src/drivers/keyboard.cpp.obj
 
-heap.i: heap.cpp.i
-.PHONY : heap.i
+src/drivers/keyboard.i: src/drivers/keyboard.cpp.i
+.PHONY : src/drivers/keyboard.i
 
 # target to preprocess a source file
-heap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/heap.cpp.i
-.PHONY : heap.cpp.i
+src/drivers/keyboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard.cpp.i
+.PHONY : src/drivers/keyboard.cpp.i
 
-heap.s: heap.cpp.s
-.PHONY : heap.s
+src/drivers/keyboard.s: src/drivers/keyboard.cpp.s
+.PHONY : src/drivers/keyboard.s
 
 # target to generate assembly for a file
-heap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/heap.cpp.s
-.PHONY : heap.cpp.s
+src/drivers/keyboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard.cpp.s
+.PHONY : src/drivers/keyboard.cpp.s
 
-interrupts.obj: interrupts.cpp.obj
-.PHONY : interrupts.obj
+src/drivers/keyboard_driver.obj: src/drivers/keyboard_driver.cpp.obj
+.PHONY : src/drivers/keyboard_driver.obj
 
 # target to build an object file
-interrupts.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/interrupts.cpp.obj
-.PHONY : interrupts.cpp.obj
+src/drivers/keyboard_driver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard_driver.cpp.obj
+.PHONY : src/drivers/keyboard_driver.cpp.obj
 
-interrupts.i: interrupts.cpp.i
-.PHONY : interrupts.i
+src/drivers/keyboard_driver.i: src/drivers/keyboard_driver.cpp.i
+.PHONY : src/drivers/keyboard_driver.i
 
 # target to preprocess a source file
-interrupts.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/interrupts.cpp.i
-.PHONY : interrupts.cpp.i
+src/drivers/keyboard_driver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard_driver.cpp.i
+.PHONY : src/drivers/keyboard_driver.cpp.i
 
-interrupts.s: interrupts.cpp.s
-.PHONY : interrupts.s
+src/drivers/keyboard_driver.s: src/drivers/keyboard_driver.cpp.s
+.PHONY : src/drivers/keyboard_driver.s
 
 # target to generate assembly for a file
-interrupts.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/interrupts.cpp.s
-.PHONY : interrupts.cpp.s
+src/drivers/keyboard_driver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/keyboard_driver.cpp.s
+.PHONY : src/drivers/keyboard_driver.cpp.s
 
-isr.obj: isr.cpp.obj
-.PHONY : isr.obj
+src/drivers/rtc.obj: src/drivers/rtc.cpp.obj
+.PHONY : src/drivers/rtc.obj
 
 # target to build an object file
-isr.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/isr.cpp.obj
-.PHONY : isr.cpp.obj
+src/drivers/rtc.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/rtc.cpp.obj
+.PHONY : src/drivers/rtc.cpp.obj
 
-isr.i: isr.cpp.i
-.PHONY : isr.i
+src/drivers/rtc.i: src/drivers/rtc.cpp.i
+.PHONY : src/drivers/rtc.i
 
 # target to preprocess a source file
-isr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/isr.cpp.i
-.PHONY : isr.cpp.i
+src/drivers/rtc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/rtc.cpp.i
+.PHONY : src/drivers/rtc.cpp.i
 
-isr.s: isr.cpp.s
-.PHONY : isr.s
+src/drivers/rtc.s: src/drivers/rtc.cpp.s
+.PHONY : src/drivers/rtc.s
 
 # target to generate assembly for a file
-isr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/isr.cpp.s
-.PHONY : isr.cpp.s
+src/drivers/rtc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/rtc.cpp.s
+.PHONY : src/drivers/rtc.cpp.s
 
-isr_exception_stubs.obj: isr_exception_stubs.asm.obj
-.PHONY : isr_exception_stubs.obj
-
-# target to build an object file
-isr_exception_stubs.asm.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/isr_exception_stubs.asm.obj
-.PHONY : isr_exception_stubs.asm.obj
-
-kernel_main.obj: kernel_main.cpp.obj
-.PHONY : kernel_main.obj
+src/drivers/timer.obj: src/drivers/timer.cpp.obj
+.PHONY : src/drivers/timer.obj
 
 # target to build an object file
-kernel_main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/kernel_main.cpp.obj
-.PHONY : kernel_main.cpp.obj
+src/drivers/timer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/timer.cpp.obj
+.PHONY : src/drivers/timer.cpp.obj
 
-kernel_main.i: kernel_main.cpp.i
-.PHONY : kernel_main.i
+src/drivers/timer.i: src/drivers/timer.cpp.i
+.PHONY : src/drivers/timer.i
 
 # target to preprocess a source file
-kernel_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/kernel_main.cpp.i
-.PHONY : kernel_main.cpp.i
+src/drivers/timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/timer.cpp.i
+.PHONY : src/drivers/timer.cpp.i
 
-kernel_main.s: kernel_main.cpp.s
-.PHONY : kernel_main.s
+src/drivers/timer.s: src/drivers/timer.cpp.s
+.PHONY : src/drivers/timer.s
 
 # target to generate assembly for a file
-kernel_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/kernel_main.cpp.s
-.PHONY : kernel_main.cpp.s
+src/drivers/timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/timer.cpp.s
+.PHONY : src/drivers/timer.cpp.s
 
-paging.obj: paging.cpp.obj
-.PHONY : paging.obj
+src/drivers/vga_display.obj: src/drivers/vga_display.cpp.obj
+.PHONY : src/drivers/vga_display.obj
 
 # target to build an object file
-paging.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/paging.cpp.obj
-.PHONY : paging.cpp.obj
+src/drivers/vga_display.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/vga_display.cpp.obj
+.PHONY : src/drivers/vga_display.cpp.obj
 
-paging.i: paging.cpp.i
-.PHONY : paging.i
+src/drivers/vga_display.i: src/drivers/vga_display.cpp.i
+.PHONY : src/drivers/vga_display.i
 
 # target to preprocess a source file
-paging.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/paging.cpp.i
-.PHONY : paging.cpp.i
+src/drivers/vga_display.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/vga_display.cpp.i
+.PHONY : src/drivers/vga_display.cpp.i
 
-paging.s: paging.cpp.s
-.PHONY : paging.s
+src/drivers/vga_display.s: src/drivers/vga_display.cpp.s
+.PHONY : src/drivers/vga_display.s
 
 # target to generate assembly for a file
-paging.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/paging.cpp.s
-.PHONY : paging.cpp.s
+src/drivers/vga_display.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/drivers/vga_display.cpp.s
+.PHONY : src/drivers/vga_display.cpp.s
 
-pmm.obj: pmm.cpp.obj
-.PHONY : pmm.obj
+src/fs/initrd.obj: src/fs/initrd.cpp.obj
+.PHONY : src/fs/initrd.obj
 
 # target to build an object file
-pmm.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/pmm.cpp.obj
-.PHONY : pmm.cpp.obj
+src/fs/initrd.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/fs/initrd.cpp.obj
+.PHONY : src/fs/initrd.cpp.obj
 
-pmm.i: pmm.cpp.i
-.PHONY : pmm.i
+src/fs/initrd.i: src/fs/initrd.cpp.i
+.PHONY : src/fs/initrd.i
 
 # target to preprocess a source file
-pmm.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/pmm.cpp.i
-.PHONY : pmm.cpp.i
+src/fs/initrd.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/fs/initrd.cpp.i
+.PHONY : src/fs/initrd.cpp.i
 
-pmm.s: pmm.cpp.s
-.PHONY : pmm.s
+src/fs/initrd.s: src/fs/initrd.cpp.s
+.PHONY : src/fs/initrd.s
 
 # target to generate assembly for a file
-pmm.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/pmm.cpp.s
-.PHONY : pmm.cpp.s
+src/fs/initrd.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/fs/initrd.cpp.s
+.PHONY : src/fs/initrd.cpp.s
 
-rtc.obj: rtc.cpp.obj
-.PHONY : rtc.obj
+src/fs/vfs.obj: src/fs/vfs.cpp.obj
+.PHONY : src/fs/vfs.obj
 
 # target to build an object file
-rtc.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/rtc.cpp.obj
-.PHONY : rtc.cpp.obj
+src/fs/vfs.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/fs/vfs.cpp.obj
+.PHONY : src/fs/vfs.cpp.obj
 
-rtc.i: rtc.cpp.i
-.PHONY : rtc.i
+src/fs/vfs.i: src/fs/vfs.cpp.i
+.PHONY : src/fs/vfs.i
 
 # target to preprocess a source file
-rtc.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/rtc.cpp.i
-.PHONY : rtc.cpp.i
+src/fs/vfs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/fs/vfs.cpp.i
+.PHONY : src/fs/vfs.cpp.i
 
-rtc.s: rtc.cpp.s
-.PHONY : rtc.s
+src/fs/vfs.s: src/fs/vfs.cpp.s
+.PHONY : src/fs/vfs.s
 
 # target to generate assembly for a file
-rtc.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/rtc.cpp.s
-.PHONY : rtc.cpp.s
+src/fs/vfs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/fs/vfs.cpp.s
+.PHONY : src/fs/vfs.cpp.s
 
-shell_engine.obj: shell_engine.cpp.obj
-.PHONY : shell_engine.obj
+src/kernel/gdt.obj: src/kernel/gdt.cpp.obj
+.PHONY : src/kernel/gdt.obj
 
 # target to build an object file
-shell_engine.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/shell_engine.cpp.obj
-.PHONY : shell_engine.cpp.obj
+src/kernel/gdt.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/gdt.cpp.obj
+.PHONY : src/kernel/gdt.cpp.obj
 
-shell_engine.i: shell_engine.cpp.i
-.PHONY : shell_engine.i
+src/kernel/gdt.i: src/kernel/gdt.cpp.i
+.PHONY : src/kernel/gdt.i
 
 # target to preprocess a source file
-shell_engine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/shell_engine.cpp.i
-.PHONY : shell_engine.cpp.i
+src/kernel/gdt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/gdt.cpp.i
+.PHONY : src/kernel/gdt.cpp.i
 
-shell_engine.s: shell_engine.cpp.s
-.PHONY : shell_engine.s
+src/kernel/gdt.s: src/kernel/gdt.cpp.s
+.PHONY : src/kernel/gdt.s
 
 # target to generate assembly for a file
-shell_engine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/shell_engine.cpp.s
-.PHONY : shell_engine.cpp.s
+src/kernel/gdt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/gdt.cpp.s
+.PHONY : src/kernel/gdt.cpp.s
 
-syscall.obj: syscall.cpp.obj
-.PHONY : syscall.obj
+src/kernel/idt.obj: src/kernel/idt.cpp.obj
+.PHONY : src/kernel/idt.obj
 
 # target to build an object file
-syscall.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/syscall.cpp.obj
-.PHONY : syscall.cpp.obj
+src/kernel/idt.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/idt.cpp.obj
+.PHONY : src/kernel/idt.cpp.obj
 
-syscall.i: syscall.cpp.i
-.PHONY : syscall.i
+src/kernel/idt.i: src/kernel/idt.cpp.i
+.PHONY : src/kernel/idt.i
 
 # target to preprocess a source file
-syscall.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/syscall.cpp.i
-.PHONY : syscall.cpp.i
+src/kernel/idt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/idt.cpp.i
+.PHONY : src/kernel/idt.cpp.i
 
-syscall.s: syscall.cpp.s
-.PHONY : syscall.s
+src/kernel/idt.s: src/kernel/idt.cpp.s
+.PHONY : src/kernel/idt.s
 
 # target to generate assembly for a file
-syscall.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/syscall.cpp.s
-.PHONY : syscall.cpp.s
+src/kernel/idt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/idt.cpp.s
+.PHONY : src/kernel/idt.cpp.s
 
-syscall_stub.obj: syscall_stub.asm.obj
-.PHONY : syscall_stub.obj
-
-# target to build an object file
-syscall_stub.asm.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/syscall_stub.asm.obj
-.PHONY : syscall_stub.asm.obj
-
-task.obj: task.cpp.obj
-.PHONY : task.obj
+src/kernel/interrupts.obj: src/kernel/interrupts.cpp.obj
+.PHONY : src/kernel/interrupts.obj
 
 # target to build an object file
-task.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/task.cpp.obj
-.PHONY : task.cpp.obj
+src/kernel/interrupts.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/interrupts.cpp.obj
+.PHONY : src/kernel/interrupts.cpp.obj
 
-task.i: task.cpp.i
-.PHONY : task.i
+src/kernel/interrupts.i: src/kernel/interrupts.cpp.i
+.PHONY : src/kernel/interrupts.i
 
 # target to preprocess a source file
-task.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/task.cpp.i
-.PHONY : task.cpp.i
+src/kernel/interrupts.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/interrupts.cpp.i
+.PHONY : src/kernel/interrupts.cpp.i
 
-task.s: task.cpp.s
-.PHONY : task.s
+src/kernel/interrupts.s: src/kernel/interrupts.cpp.s
+.PHONY : src/kernel/interrupts.s
 
 # target to generate assembly for a file
-task.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/task.cpp.s
-.PHONY : task.cpp.s
+src/kernel/interrupts.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/interrupts.cpp.s
+.PHONY : src/kernel/interrupts.cpp.s
 
-task_switch.obj: task_switch.asm.obj
-.PHONY : task_switch.obj
-
-# target to build an object file
-task_switch.asm.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/task_switch.asm.obj
-.PHONY : task_switch.asm.obj
-
-timer.obj: timer.cpp.obj
-.PHONY : timer.obj
+src/kernel/isr.obj: src/kernel/isr.cpp.obj
+.PHONY : src/kernel/isr.obj
 
 # target to build an object file
-timer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/timer.cpp.obj
-.PHONY : timer.cpp.obj
+src/kernel/isr.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/isr.cpp.obj
+.PHONY : src/kernel/isr.cpp.obj
 
-timer.i: timer.cpp.i
-.PHONY : timer.i
+src/kernel/isr.i: src/kernel/isr.cpp.i
+.PHONY : src/kernel/isr.i
 
 # target to preprocess a source file
-timer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/timer.cpp.i
-.PHONY : timer.cpp.i
+src/kernel/isr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/isr.cpp.i
+.PHONY : src/kernel/isr.cpp.i
 
-timer.s: timer.cpp.s
-.PHONY : timer.s
+src/kernel/isr.s: src/kernel/isr.cpp.s
+.PHONY : src/kernel/isr.s
 
 # target to generate assembly for a file
-timer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/timer.cpp.s
-.PHONY : timer.cpp.s
+src/kernel/isr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/isr.cpp.s
+.PHONY : src/kernel/isr.cpp.s
 
-user_mode.obj: user_mode.asm.obj
-.PHONY : user_mode.obj
-
-# target to build an object file
-user_mode.asm.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/user_mode.asm.obj
-.PHONY : user_mode.asm.obj
-
-vga_driver.obj: vga_driver.cpp.obj
-.PHONY : vga_driver.obj
+src/kernel/kernel_main.obj: src/kernel/kernel_main.cpp.obj
+.PHONY : src/kernel/kernel_main.obj
 
 # target to build an object file
-vga_driver.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/vga_driver.cpp.obj
-.PHONY : vga_driver.cpp.obj
+src/kernel/kernel_main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/kernel_main.cpp.obj
+.PHONY : src/kernel/kernel_main.cpp.obj
 
-vga_driver.i: vga_driver.cpp.i
-.PHONY : vga_driver.i
+src/kernel/kernel_main.i: src/kernel/kernel_main.cpp.i
+.PHONY : src/kernel/kernel_main.i
 
 # target to preprocess a source file
-vga_driver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/vga_driver.cpp.i
-.PHONY : vga_driver.cpp.i
+src/kernel/kernel_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/kernel_main.cpp.i
+.PHONY : src/kernel/kernel_main.cpp.i
 
-vga_driver.s: vga_driver.cpp.s
-.PHONY : vga_driver.s
+src/kernel/kernel_main.s: src/kernel/kernel_main.cpp.s
+.PHONY : src/kernel/kernel_main.s
 
 # target to generate assembly for a file
-vga_driver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/vga_driver.cpp.s
-.PHONY : vga_driver.cpp.s
+src/kernel/kernel_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/kernel_main.cpp.s
+.PHONY : src/kernel/kernel_main.cpp.s
+
+src/kernel/syscall.obj: src/kernel/syscall.cpp.obj
+.PHONY : src/kernel/syscall.obj
+
+# target to build an object file
+src/kernel/syscall.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/syscall.cpp.obj
+.PHONY : src/kernel/syscall.cpp.obj
+
+src/kernel/syscall.i: src/kernel/syscall.cpp.i
+.PHONY : src/kernel/syscall.i
+
+# target to preprocess a source file
+src/kernel/syscall.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/syscall.cpp.i
+.PHONY : src/kernel/syscall.cpp.i
+
+src/kernel/syscall.s: src/kernel/syscall.cpp.s
+.PHONY : src/kernel/syscall.s
+
+# target to generate assembly for a file
+src/kernel/syscall.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/syscall.cpp.s
+.PHONY : src/kernel/syscall.cpp.s
+
+src/kernel/task.obj: src/kernel/task.cpp.obj
+.PHONY : src/kernel/task.obj
+
+# target to build an object file
+src/kernel/task.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/task.cpp.obj
+.PHONY : src/kernel/task.cpp.obj
+
+src/kernel/task.i: src/kernel/task.cpp.i
+.PHONY : src/kernel/task.i
+
+# target to preprocess a source file
+src/kernel/task.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/task.cpp.i
+.PHONY : src/kernel/task.cpp.i
+
+src/kernel/task.s: src/kernel/task.cpp.s
+.PHONY : src/kernel/task.s
+
+# target to generate assembly for a file
+src/kernel/task.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/kernel/task.cpp.s
+.PHONY : src/kernel/task.cpp.s
+
+src/mem/heap.obj: src/mem/heap.cpp.obj
+.PHONY : src/mem/heap.obj
+
+# target to build an object file
+src/mem/heap.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/mem/heap.cpp.obj
+.PHONY : src/mem/heap.cpp.obj
+
+src/mem/heap.i: src/mem/heap.cpp.i
+.PHONY : src/mem/heap.i
+
+# target to preprocess a source file
+src/mem/heap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/mem/heap.cpp.i
+.PHONY : src/mem/heap.cpp.i
+
+src/mem/heap.s: src/mem/heap.cpp.s
+.PHONY : src/mem/heap.s
+
+# target to generate assembly for a file
+src/mem/heap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/mem/heap.cpp.s
+.PHONY : src/mem/heap.cpp.s
+
+src/mem/paging.obj: src/mem/paging.cpp.obj
+.PHONY : src/mem/paging.obj
+
+# target to build an object file
+src/mem/paging.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/mem/paging.cpp.obj
+.PHONY : src/mem/paging.cpp.obj
+
+src/mem/paging.i: src/mem/paging.cpp.i
+.PHONY : src/mem/paging.i
+
+# target to preprocess a source file
+src/mem/paging.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/mem/paging.cpp.i
+.PHONY : src/mem/paging.cpp.i
+
+src/mem/paging.s: src/mem/paging.cpp.s
+.PHONY : src/mem/paging.s
+
+# target to generate assembly for a file
+src/mem/paging.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/mem/paging.cpp.s
+.PHONY : src/mem/paging.cpp.s
+
+src/mem/pmm.obj: src/mem/pmm.cpp.obj
+.PHONY : src/mem/pmm.obj
+
+# target to build an object file
+src/mem/pmm.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/mem/pmm.cpp.obj
+.PHONY : src/mem/pmm.cpp.obj
+
+src/mem/pmm.i: src/mem/pmm.cpp.i
+.PHONY : src/mem/pmm.i
+
+# target to preprocess a source file
+src/mem/pmm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/mem/pmm.cpp.i
+.PHONY : src/mem/pmm.cpp.i
+
+src/mem/pmm.s: src/mem/pmm.cpp.s
+.PHONY : src/mem/pmm.s
+
+# target to generate assembly for a file
+src/mem/pmm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/mem/pmm.cpp.s
+.PHONY : src/mem/pmm.cpp.s
+
+src/user/shell_engine.obj: src/user/shell_engine.cpp.obj
+.PHONY : src/user/shell_engine.obj
+
+# target to build an object file
+src/user/shell_engine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/user/shell_engine.cpp.obj
+.PHONY : src/user/shell_engine.cpp.obj
+
+src/user/shell_engine.i: src/user/shell_engine.cpp.i
+.PHONY : src/user/shell_engine.i
+
+# target to preprocess a source file
+src/user/shell_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/user/shell_engine.cpp.i
+.PHONY : src/user/shell_engine.cpp.i
+
+src/user/shell_engine.s: src/user/shell_engine.cpp.s
+.PHONY : src/user/shell_engine.s
+
+# target to generate assembly for a file
+src/user/shell_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/user/shell_engine.cpp.s
+.PHONY : src/user/shell_engine.cpp.s
 
 # Help Target
 help:
@@ -489,50 +641,69 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... kernel.bin
-	@echo ... gdt.obj
-	@echo ... gdt.i
-	@echo ... gdt.s
-	@echo ... gdt_flush.obj
-	@echo ... heap.obj
-	@echo ... heap.i
-	@echo ... heap.s
-	@echo ... interrupts.obj
-	@echo ... interrupts.i
-	@echo ... interrupts.s
-	@echo ... isr.obj
-	@echo ... isr.i
-	@echo ... isr.s
-	@echo ... isr_exception_stubs.obj
-	@echo ... kernel_main.obj
-	@echo ... kernel_main.i
-	@echo ... kernel_main.s
-	@echo ... paging.obj
-	@echo ... paging.i
-	@echo ... paging.s
-	@echo ... pmm.obj
-	@echo ... pmm.i
-	@echo ... pmm.s
-	@echo ... rtc.obj
-	@echo ... rtc.i
-	@echo ... rtc.s
-	@echo ... shell_engine.obj
-	@echo ... shell_engine.i
-	@echo ... shell_engine.s
-	@echo ... syscall.obj
-	@echo ... syscall.i
-	@echo ... syscall.s
-	@echo ... syscall_stub.obj
-	@echo ... task.obj
-	@echo ... task.i
-	@echo ... task.s
-	@echo ... task_switch.obj
-	@echo ... timer.obj
-	@echo ... timer.i
-	@echo ... timer.s
-	@echo ... user_mode.obj
-	@echo ... vga_driver.obj
-	@echo ... vga_driver.i
-	@echo ... vga_driver.s
+	@echo ... src/arch/x86/gdt_flush.obj
+	@echo ... src/arch/x86/isr_exception_stubs.obj
+	@echo ... src/arch/x86/isr_stub.obj
+	@echo ... src/arch/x86/syscall_stub.obj
+	@echo ... src/arch/x86/task_switch.obj
+	@echo ... src/arch/x86/user_mode.obj
+	@echo ... src/drivers/keyboard.obj
+	@echo ... src/drivers/keyboard.i
+	@echo ... src/drivers/keyboard.s
+	@echo ... src/drivers/keyboard.obj
+	@echo ... src/drivers/keyboard.i
+	@echo ... src/drivers/keyboard.s
+	@echo ... src/drivers/keyboard_driver.obj
+	@echo ... src/drivers/keyboard_driver.i
+	@echo ... src/drivers/keyboard_driver.s
+	@echo ... src/drivers/rtc.obj
+	@echo ... src/drivers/rtc.i
+	@echo ... src/drivers/rtc.s
+	@echo ... src/drivers/timer.obj
+	@echo ... src/drivers/timer.i
+	@echo ... src/drivers/timer.s
+	@echo ... src/drivers/vga_display.obj
+	@echo ... src/drivers/vga_display.i
+	@echo ... src/drivers/vga_display.s
+	@echo ... src/fs/initrd.obj
+	@echo ... src/fs/initrd.i
+	@echo ... src/fs/initrd.s
+	@echo ... src/fs/vfs.obj
+	@echo ... src/fs/vfs.i
+	@echo ... src/fs/vfs.s
+	@echo ... src/kernel/gdt.obj
+	@echo ... src/kernel/gdt.i
+	@echo ... src/kernel/gdt.s
+	@echo ... src/kernel/idt.obj
+	@echo ... src/kernel/idt.i
+	@echo ... src/kernel/idt.s
+	@echo ... src/kernel/interrupts.obj
+	@echo ... src/kernel/interrupts.i
+	@echo ... src/kernel/interrupts.s
+	@echo ... src/kernel/isr.obj
+	@echo ... src/kernel/isr.i
+	@echo ... src/kernel/isr.s
+	@echo ... src/kernel/kernel_main.obj
+	@echo ... src/kernel/kernel_main.i
+	@echo ... src/kernel/kernel_main.s
+	@echo ... src/kernel/syscall.obj
+	@echo ... src/kernel/syscall.i
+	@echo ... src/kernel/syscall.s
+	@echo ... src/kernel/task.obj
+	@echo ... src/kernel/task.i
+	@echo ... src/kernel/task.s
+	@echo ... src/mem/heap.obj
+	@echo ... src/mem/heap.i
+	@echo ... src/mem/heap.s
+	@echo ... src/mem/paging.obj
+	@echo ... src/mem/paging.i
+	@echo ... src/mem/paging.s
+	@echo ... src/mem/pmm.obj
+	@echo ... src/mem/pmm.i
+	@echo ... src/mem/pmm.s
+	@echo ... src/user/shell_engine.obj
+	@echo ... src/user/shell_engine.i
+	@echo ... src/user/shell_engine.s
 .PHONY : help
 
 

@@ -5,7 +5,7 @@ events:
     kind: "message-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineSystem.cmake:213 (message)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       The target system is: Generic -  - i686
       The host system is: Windows - 10.0.26200 - AMD64
@@ -13,7 +13,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeMinGWFindMake.cmake:5 (find_program)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
     description: "Path to a program."
@@ -143,7 +143,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -208,7 +208,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
       Compiler: C:/i686-elf-tools-windows/bin/i686-elf-gcc.exe 
@@ -230,7 +230,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -295,7 +295,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: C:/i686-elf-tools-windows/bin/i686-elf-gcc.exe 
@@ -316,7 +316,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "program"
     variable: "CMAKE_AR"
     description: "Path to a program."
@@ -411,7 +411,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "program"
     variable: "CMAKE_RANLIB"
     description: "Path to a program."
@@ -506,7 +506,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "program"
     variable: "CMAKE_STRIP"
     description: "Path to a program."
@@ -601,7 +601,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
     description: "Path to a program."
@@ -696,7 +696,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "program"
     variable: "CMAKE_NM"
     description: "Path to a program."
@@ -791,7 +791,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
     description: "Path to a program."
@@ -886,7 +886,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "program"
     variable: "CMAKE_OBJCOPY"
     description: "Path to a program."
@@ -981,7 +981,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "program"
     variable: "CMAKE_READELF"
     description: "Path to a program."
@@ -1076,7 +1076,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
     description: "Path to a program."
@@ -1306,7 +1306,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
     description: "Path to a program."
@@ -1401,7 +1401,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "program"
     variable: "CMAKE_TAPI"
     description: "Path to a program."
@@ -1669,7 +1669,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_AR"
     description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
@@ -2027,7 +2027,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_RANLIB"
     description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
@@ -2388,7 +2388,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -2453,7 +2453,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
       Compiler: C:/i686-elf-tools-windows/bin/i686-elf-g++.exe 
@@ -2477,7 +2477,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -2542,7 +2542,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: C:/i686-elf-tools-windows/bin/i686-elf-g++.exe 
@@ -2563,7 +2563,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_AR"
     description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
@@ -2921,7 +2921,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_RANLIB"
     description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
@@ -3280,7 +3280,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
       NASM version 3.02 compiled on Jun 28 2026
@@ -3290,7 +3290,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
       NASM version 3.02 compiled on Jun 28 2026
@@ -3300,7 +3300,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is Clang using "--version" did not match "(clang version)":
       NASM version 3.02 compiled on Jun 28 2026
@@ -3310,7 +3310,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is ARMClang using "--version" did not match "armclang":
       NASM version 3.02 compiled on Jun 28 2026
@@ -3320,7 +3320,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
       NASM version 3.02 compiled on Jun 28 2026
@@ -3330,7 +3330,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is HP using "-V" did not match "HP C":
       nasm: error: unrecognised option `-V'
@@ -3340,7 +3340,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is Intel using "--version" did not match "(ICC)":
       NASM version 3.02 compiled on Jun 28 2026
@@ -3350,7 +3350,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is IntelLLVM using "--version" did not match "(Intel[^
       ]+oneAPI)":
@@ -3361,7 +3361,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is SunPro using "-V" did not match "Sun C":
       nasm: error: unrecognised option `-V'
@@ -3371,7 +3371,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is XL using "-qversion" did not match "XL C":
       nasm: error: unrecognised option `-q'
@@ -3381,7 +3381,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is MSVC using "-?" did not match "Microsoft":
       Usage: C:/Users/Lunar/AppData/Local/bin/NASM/nasm.exe [-@ response_file] [options...] [--] filename
@@ -3436,7 +3436,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is TI using "-h" did not match "Texas Instruments":
       Usage: C:/Users/Lunar/AppData/Local/bin/NASM/nasm.exe [-@ response_file] [options...] [--] filename
@@ -3491,7 +3491,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is TIClang using "--version" did not match "(TI (.*) Clang Compiler)":
       NASM version 3.02 compiled on Jun 28 2026
@@ -3501,7 +3501,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is IAR using "" did not match "IAR Assembler":
       nasm: fatal: no input file specified
@@ -3514,7 +3514,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is Diab using "-V" did not match "Wind River Systems":
       nasm: error: unrecognised option `-V'
@@ -3524,7 +3524,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1341 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
       nasm: fatal: no input file specified
@@ -3537,7 +3537,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:1328 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake:174 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_NASMCompiler.cmake:22 (include)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Checking whether the ASM_NASM compiler is NASM using "-v" matched "(NASM version)":
       NASM version 3.02 compiled on Jun 28 2026
@@ -3546,12 +3546,12 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-7sdpfn"
-      binary: "C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-7sdpfn"
+      source: "C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-bxqqxo"
+      binary: "C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-bxqqxo"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -3561,13 +3561,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-7sdpfn'
+        Change Dir: 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-bxqqxo'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_111e2/fast
-        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_111e2.dir\\build.make CMakeFiles/cmTC_111e2.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-7sdpfn'
-        Building C object CMakeFiles/cmTC_111e2.dir/CMakeCCompilerABI.c.obj
-        C:\\i686-elf-tools-windows\\bin\\i686-elf-gcc.exe   -v -o CMakeFiles\\cmTC_111e2.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_6e478/fast
+        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_6e478.dir\\build.make CMakeFiles/cmTC_6e478.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-bxqqxo'
+        Building C object CMakeFiles/cmTC_6e478.dir/CMakeCCompilerABI.c.obj
+        C:\\i686-elf-tools-windows\\bin\\i686-elf-gcc.exe   -v -o CMakeFiles\\cmTC_6e478.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"
         Using built-in specs.
         COLLECT_GCC=C:\\i686-elf-tools-windows\\bin\\i686-elf-gcc.exe
         Target: i686-elf
@@ -3575,8 +3575,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 15.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_111e2.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_111e2.dir\\'
-         C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/cc1.exe -quiet -v -iprefix C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_111e2.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=pentiumpro -version -o C:\\Users\\Lunar\\AppData\\Local\\Temp\\cc37Om5P.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6e478.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_6e478.dir\\'
+         C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/cc1.exe -quiet -v -iprefix C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_6e478.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=pentiumpro -version -o C:\\Users\\Lunar\\AppData\\Local\\Temp\\cc3oY6Av.s
         GNU C23 (GCC) version 15.2.0 (i686-elf)
         	compiled by GNU C version 11.5.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -3593,17 +3593,17 @@ events:
          C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/include-fixed
         End of search list.
         Compiler executable checksum: 97ae621b47c3c7b0de8eef96c3850ce2
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_111e2.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_111e2.dir\\'
-         C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/as.exe -o CMakeFiles\\cmTC_111e2.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Lunar\\AppData\\Local\\Temp\\cc37Om5P.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6e478.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_6e478.dir\\'
+         C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/as.exe -o CMakeFiles\\cmTC_6e478.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Lunar\\AppData\\Local\\Temp\\cc3oY6Av.s
         COMPILER_PATH=C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/;C:/i686-elf-tools-windows/bin/../libexec/gcc/;C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/
         LIBRARY_PATH=C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/;C:/i686-elf-tools-windows/bin/../lib/gcc/;C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_111e2.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_111e2.dir\\CMakeCCompilerABI.c.'
-        Linking C static library libcmTC_111e2.a
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_111e2.dir\\cmake_clean_target.cmake
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_111e2.dir\\link.txt --verbose=1
-        C:\\i686-elf-tools-windows\\bin\\i686-elf-ar.exe qc libcmTC_111e2.a CMakeFiles/cmTC_111e2.dir/CMakeCCompilerABI.c.obj
-        C:\\i686-elf-tools-windows\\bin\\i686-elf-ranlib.exe libcmTC_111e2.a
-        mingw32-make[1]: Leaving directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-7sdpfn'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6e478.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_6e478.dir\\CMakeCCompilerABI.c.'
+        Linking C static library libcmTC_6e478.a
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_6e478.dir\\cmake_clean_target.cmake
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_6e478.dir\\link.txt --verbose=1
+        C:\\i686-elf-tools-windows\\bin\\i686-elf-ar.exe qc libcmTC_6e478.a CMakeFiles/cmTC_6e478.dir/CMakeCCompilerABI.c.obj
+        C:\\i686-elf-tools-windows\\bin\\i686-elf-ranlib.exe libcmTC_6e478.a
+        mingw32-make[1]: Leaving directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-bxqqxo'
         
       exitCode: 0
   -
@@ -3611,7 +3611,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
@@ -3629,18 +3629,18 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-7sdpfn']
+        ignore line: [Change Dir: 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-bxqqxo']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_111e2/fast]
-        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_111e2.dir\\build.make CMakeFiles/cmTC_111e2.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-7sdpfn']
-        ignore line: [Building C object CMakeFiles/cmTC_111e2.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-gcc.exe   -v -o CMakeFiles\\cmTC_111e2.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_6e478/fast]
+        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_6e478.dir\\build.make CMakeFiles/cmTC_6e478.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-bxqqxo']
+        ignore line: [Building C object CMakeFiles/cmTC_6e478.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-gcc.exe   -v -o CMakeFiles\\cmTC_6e478.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\i686-elf-tools-windows\\bin\\i686-elf-gcc.exe]
         ignore line: [Target: i686-elf]
@@ -3648,8 +3648,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 15.2.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_111e2.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_111e2.dir\\']
-        ignore line: [ C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/cc1.exe -quiet -v -iprefix C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_111e2.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=pentiumpro -version -o C:\\Users\\Lunar\\AppData\\Local\\Temp\\cc37Om5P.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6e478.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_6e478.dir\\']
+        ignore line: [ C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/cc1.exe -quiet -v -iprefix C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_6e478.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=pentiumpro -version -o C:\\Users\\Lunar\\AppData\\Local\\Temp\\cc3oY6Av.s]
         ignore line: [GNU C23 (GCC) version 15.2.0 (i686-elf)]
         ignore line: [	compiled by GNU C version 11.5.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -3666,21 +3666,21 @@ events:
         ignore line: [ C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 97ae621b47c3c7b0de8eef96c3850ce2]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_111e2.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_111e2.dir\\']
-        ignore line: [ C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/as.exe -o CMakeFiles\\cmTC_111e2.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Lunar\\AppData\\Local\\Temp\\cc37Om5P.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6e478.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_6e478.dir\\']
+        ignore line: [ C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/as.exe -o CMakeFiles\\cmTC_6e478.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Lunar\\AppData\\Local\\Temp\\cc3oY6Av.s]
         ignore line: [COMPILER_PATH=C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/]
         ignore line: [C:/i686-elf-tools-windows/bin/../libexec/gcc/]
         ignore line: [C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/]
         ignore line: [LIBRARY_PATH=C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/]
         ignore line: [C:/i686-elf-tools-windows/bin/../lib/gcc/]
         ignore line: [C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_111e2.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_111e2.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C static library libcmTC_111e2.a]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_111e2.dir\\cmake_clean_target.cmake]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_111e2.dir\\link.txt --verbose=1]
-        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-ar.exe qc libcmTC_111e2.a CMakeFiles/cmTC_111e2.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-ranlib.exe libcmTC_111e2.a]
-        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-7sdpfn']
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6e478.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_6e478.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C static library libcmTC_6e478.a]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_6e478.dir\\cmake_clean_target.cmake]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_6e478.dir\\link.txt --verbose=1]
+        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-ar.exe qc libcmTC_6e478.a CMakeFiles/cmTC_6e478.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-ranlib.exe libcmTC_6e478.a]
+        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-bxqqxo']
         ignore line: []
         ignore line: []
         implicit libs: []
@@ -3694,12 +3694,12 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-xlxmp8"
-      binary: "C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-xlxmp8"
+      source: "C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-05gecp"
+      binary: "C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-05gecp"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -3710,13 +3710,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-xlxmp8'
+        Change Dir: 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-05gecp'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_ac37a/fast
-        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ac37a.dir\\build.make CMakeFiles/cmTC_ac37a.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-xlxmp8'
-        Building CXX object CMakeFiles/cmTC_ac37a.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\i686-elf-tools-windows\\bin\\i686-elf-g++.exe   -v -o CMakeFiles\\cmTC_ac37a.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_c1276/fast
+        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c1276.dir\\build.make CMakeFiles/cmTC_c1276.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-05gecp'
+        Building CXX object CMakeFiles/cmTC_c1276.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\i686-elf-tools-windows\\bin\\i686-elf-g++.exe   -v -o CMakeFiles\\cmTC_c1276.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=C:\\i686-elf-tools-windows\\bin\\i686-elf-g++.exe
         Target: i686-elf
@@ -3724,8 +3724,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 15.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ac37a.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_ac37a.dir\\'
-         C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/cc1plus.exe -quiet -v -iprefix C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_ac37a.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=pentiumpro -version -o C:\\Users\\Lunar\\AppData\\Local\\Temp\\cca72kWj.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c1276.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_c1276.dir\\'
+         C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/cc1plus.exe -quiet -v -iprefix C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_c1276.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=pentiumpro -version -o C:\\Users\\Lunar\\AppData\\Local\\Temp\\cc0a86db.s
         GNU C++17 (GCC) version 15.2.0 (i686-elf)
         	compiled by GNU C version 11.5.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -3748,17 +3748,17 @@ events:
          C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/include-fixed
         End of search list.
         Compiler executable checksum: 6d6684f919aab6484d3f2fe0879da214
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ac37a.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_ac37a.dir\\'
-         C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/as.exe -o CMakeFiles\\cmTC_ac37a.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Lunar\\AppData\\Local\\Temp\\cca72kWj.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c1276.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_c1276.dir\\'
+         C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/as.exe -o CMakeFiles\\cmTC_c1276.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Lunar\\AppData\\Local\\Temp\\cc0a86db.s
         COMPILER_PATH=C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/;C:/i686-elf-tools-windows/bin/../libexec/gcc/;C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/
         LIBRARY_PATH=C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/;C:/i686-elf-tools-windows/bin/../lib/gcc/;C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ac37a.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_ac37a.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX static library libcmTC_ac37a.a
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_ac37a.dir\\cmake_clean_target.cmake
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_ac37a.dir\\link.txt --verbose=1
-        C:\\i686-elf-tools-windows\\bin\\i686-elf-ar.exe qc libcmTC_ac37a.a CMakeFiles/cmTC_ac37a.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\i686-elf-tools-windows\\bin\\i686-elf-ranlib.exe libcmTC_ac37a.a
-        mingw32-make[1]: Leaving directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-xlxmp8'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c1276.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_c1276.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX static library libcmTC_c1276.a
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_c1276.dir\\cmake_clean_target.cmake
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_c1276.dir\\link.txt --verbose=1
+        C:\\i686-elf-tools-windows\\bin\\i686-elf-ar.exe qc libcmTC_c1276.a CMakeFiles/cmTC_c1276.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\i686-elf-tools-windows\\bin\\i686-elf-ranlib.exe libcmTC_c1276.a
+        mingw32-make[1]: Leaving directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-05gecp'
         
       exitCode: 0
   -
@@ -3766,7 +3766,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
@@ -3784,18 +3784,18 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
       - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:17 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-xlxmp8']
+        ignore line: [Change Dir: 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-05gecp']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_ac37a/fast]
-        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ac37a.dir\\build.make CMakeFiles/cmTC_ac37a.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-xlxmp8']
-        ignore line: [Building CXX object CMakeFiles/cmTC_ac37a.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-g++.exe   -v -o CMakeFiles\\cmTC_ac37a.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_c1276/fast]
+        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c1276.dir\\build.make CMakeFiles/cmTC_c1276.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-05gecp']
+        ignore line: [Building CXX object CMakeFiles/cmTC_c1276.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-g++.exe   -v -o CMakeFiles\\cmTC_c1276.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\i686-elf-tools-windows\\bin\\i686-elf-g++.exe]
         ignore line: [Target: i686-elf]
@@ -3803,8 +3803,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 15.2.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ac37a.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_ac37a.dir\\']
-        ignore line: [ C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/cc1plus.exe -quiet -v -iprefix C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_ac37a.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=pentiumpro -version -o C:\\Users\\Lunar\\AppData\\Local\\Temp\\cca72kWj.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c1276.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_c1276.dir\\']
+        ignore line: [ C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/cc1plus.exe -quiet -v -iprefix C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_c1276.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=pentiumpro -version -o C:\\Users\\Lunar\\AppData\\Local\\Temp\\cc0a86db.s]
         ignore line: [GNU C++17 (GCC) version 15.2.0 (i686-elf)]
         ignore line: [	compiled by GNU C version 11.5.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -3827,21 +3827,21 @@ events:
         ignore line: [ C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 6d6684f919aab6484d3f2fe0879da214]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ac37a.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_ac37a.dir\\']
-        ignore line: [ C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/as.exe -o CMakeFiles\\cmTC_ac37a.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Lunar\\AppData\\Local\\Temp\\cca72kWj.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c1276.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_c1276.dir\\']
+        ignore line: [ C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/as.exe -o CMakeFiles\\cmTC_c1276.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Lunar\\AppData\\Local\\Temp\\cc0a86db.s]
         ignore line: [COMPILER_PATH=C:/i686-elf-tools-windows/bin/../libexec/gcc/i686-elf/15.2.0/]
         ignore line: [C:/i686-elf-tools-windows/bin/../libexec/gcc/]
         ignore line: [C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/bin/]
         ignore line: [LIBRARY_PATH=C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/]
         ignore line: [C:/i686-elf-tools-windows/bin/../lib/gcc/]
         ignore line: [C:/i686-elf-tools-windows/bin/../lib/gcc/i686-elf/15.2.0/../../../../i686-elf/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ac37a.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_ac37a.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX static library libcmTC_ac37a.a]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_ac37a.dir\\cmake_clean_target.cmake]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_ac37a.dir\\link.txt --verbose=1]
-        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-ar.exe qc libcmTC_ac37a.a CMakeFiles/cmTC_ac37a.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-ranlib.exe libcmTC_ac37a.a]
-        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-xlxmp8']
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_c1276.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles\\cmTC_c1276.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX static library libcmTC_c1276.a]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_c1276.dir\\cmake_clean_target.cmake]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_c1276.dir\\link.txt --verbose=1]
+        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-ar.exe qc libcmTC_c1276.a CMakeFiles/cmTC_c1276.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\i686-elf-tools-windows\\bin\\i686-elf-ranlib.exe libcmTC_c1276.a]
+        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/Lunar/CLionProjects/MeowOS/build/CMakeFiles/CMakeScratch/TryCompile-05gecp']
         ignore line: []
         ignore line: []
         implicit libs: []
