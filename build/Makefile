@@ -176,6 +176,30 @@ interrupts.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/interrupts.cpp.s
 .PHONY : interrupts.cpp.s
 
+isr.obj: isr.cpp.obj
+.PHONY : isr.obj
+
+# target to build an object file
+isr.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/isr.cpp.obj
+.PHONY : isr.cpp.obj
+
+isr.i: isr.cpp.i
+.PHONY : isr.i
+
+# target to preprocess a source file
+isr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/isr.cpp.i
+.PHONY : isr.cpp.i
+
+isr.s: isr.cpp.s
+.PHONY : isr.s
+
+# target to generate assembly for a file
+isr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/isr.cpp.s
+.PHONY : isr.cpp.s
+
 isr_exception_stubs.obj: isr_exception_stubs.asm.obj
 .PHONY : isr_exception_stubs.obj
 
@@ -367,6 +391,9 @@ help:
 	@echo ... interrupts.obj
 	@echo ... interrupts.i
 	@echo ... interrupts.s
+	@echo ... isr.obj
+	@echo ... isr.i
+	@echo ... isr.s
 	@echo ... isr_exception_stubs.obj
 	@echo ... kernel_main.obj
 	@echo ... kernel_main.i

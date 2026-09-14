@@ -16,6 +16,11 @@ struct IDTPtr {
 static IDTEntry idt[256];
 static IDTPtr idtp;
 
+extern "C" void isr0();
+extern "C" void isr6();
+extern "C" void isr13();
+extern "C" void isr14();
+
 extern "C" void irq0_stub();
 extern "C" void irq1_stub();
 
@@ -51,8 +56,15 @@ extern "C" void init_interrupts() {
 
     pic_remap();
 
-    idt_set_gate(0x20, reinterpret_cast<uint32_t>(irq0_stub), 0x08, 0x8E); // IRQ0
-    idt_set_gate(0x21, reinterpret_cast<uint32_t>(irq1_stub), 0x08, 0x8E); // IRQ1
+    // Register CPU Exceptions
+    idt_set_gate(0,  reinterpret_cast<uint32_t>(isr0),  0x08, 0x8E);
+    idt_set_gate(6,  reinterpret_cast<uint32_t>(isr6),  0x08, 0x8E);
+    idt_set_gate(13, reinterpret_cast<uint32_t>(isr13), 0x08, 0x8E);
+    idt_set_gate(14, reinterpret_cast<uint32_t>(isr14), 0x08, 0x8E);
+
+    // Register Hardware IRQs
+    idt_set_gate(0x20, reinterpret_cast<uint32_t>(irq0_stub), 0x08, 0x8E);
+    idt_set_gate(0x21, reinterpret_cast<uint32_t>(irq1_stub), 0x08, 0x8E);
 
     asm volatile("lidt %0" :: "m"(idtp));
     asm volatile("sti");
