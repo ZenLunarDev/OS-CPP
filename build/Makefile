@@ -128,29 +128,13 @@ kernel.bin/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/build
 .PHONY : kernel.bin/fast
 
-src/arch/x86/gdt_flush.obj: src/arch/x86/gdt_flush.asm.obj
-.PHONY : src/arch/x86/gdt_flush.obj
+src/arch/x86/interrupts.obj: src/arch/x86/interrupts.asm.obj
+.PHONY : src/arch/x86/interrupts.obj
 
 # target to build an object file
-src/arch/x86/gdt_flush.asm.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/arch/x86/gdt_flush.asm.obj
-.PHONY : src/arch/x86/gdt_flush.asm.obj
-
-src/arch/x86/isr_exception_stubs.obj: src/arch/x86/isr_exception_stubs.asm.obj
-.PHONY : src/arch/x86/isr_exception_stubs.obj
-
-# target to build an object file
-src/arch/x86/isr_exception_stubs.asm.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/arch/x86/isr_exception_stubs.asm.obj
-.PHONY : src/arch/x86/isr_exception_stubs.asm.obj
-
-src/arch/x86/isr_stub.obj: src/arch/x86/isr_stub.asm.obj
-.PHONY : src/arch/x86/isr_stub.obj
-
-# target to build an object file
-src/arch/x86/isr_stub.asm.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/arch/x86/isr_stub.asm.obj
-.PHONY : src/arch/x86/isr_stub.asm.obj
+src/arch/x86/interrupts.asm.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/src/arch/x86/interrupts.asm.obj
+.PHONY : src/arch/x86/interrupts.asm.obj
 
 src/arch/x86/syscall_stub.obj: src/arch/x86/syscall_stub.asm.obj
 .PHONY : src/arch/x86/syscall_stub.obj
@@ -641,9 +625,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... kernel.bin
-	@echo ... src/arch/x86/gdt_flush.obj
-	@echo ... src/arch/x86/isr_exception_stubs.obj
-	@echo ... src/arch/x86/isr_stub.obj
+	@echo ... src/arch/x86/interrupts.obj
 	@echo ... src/arch/x86/syscall_stub.obj
 	@echo ... src/arch/x86/task_switch.obj
 	@echo ... src/arch/x86/user_mode.obj

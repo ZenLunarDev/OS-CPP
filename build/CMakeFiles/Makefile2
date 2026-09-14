@@ -84,12 +84,12 @@ clean: CMakeFiles/kernel.bin.dir/clean
 CMakeFiles/kernel.bin.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Lunar\CLionProjects\MeowOS\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target kernel.bin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Lunar\CLionProjects\MeowOS\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24 "Built target kernel.bin"
 .PHONY : CMakeFiles/kernel.bin.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/kernel.bin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lunar\CLionProjects\MeowOS\build\CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lunar\CLionProjects\MeowOS\build\CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/kernel.bin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lunar\CLionProjects\MeowOS\build\CMakeFiles 0
 .PHONY : CMakeFiles/kernel.bin.dir/rule
@@ -101,7 +101,7 @@ kernel.bin: CMakeFiles/kernel.bin.dir/rule
 # codegen rule for target.
 CMakeFiles/kernel.bin.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Lunar\CLionProjects\MeowOS\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Finished codegen for target kernel.bin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Lunar\CLionProjects\MeowOS\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24 "Finished codegen for target kernel.bin"
 .PHONY : CMakeFiles/kernel.bin.dir/codegen
 
 # clean rule for target.
