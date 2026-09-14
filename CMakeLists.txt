@@ -27,6 +27,8 @@ set(SOURCES
         interrupts.cpp
         shell_engine.cpp
         vga_driver.cpp
+        pmm.cpp
+        heap.cpp
         kernel_main.cpp
 )
 

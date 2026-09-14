@@ -128,6 +128,30 @@ kernel.bin/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/build
 .PHONY : kernel.bin/fast
 
+heap.obj: heap.cpp.obj
+.PHONY : heap.obj
+
+# target to build an object file
+heap.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/heap.cpp.obj
+.PHONY : heap.cpp.obj
+
+heap.i: heap.cpp.i
+.PHONY : heap.i
+
+# target to preprocess a source file
+heap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/heap.cpp.i
+.PHONY : heap.cpp.i
+
+heap.s: heap.cpp.s
+.PHONY : heap.s
+
+# target to generate assembly for a file
+heap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/heap.cpp.s
+.PHONY : heap.cpp.s
+
 interrupts.obj: interrupts.cpp.obj
 .PHONY : interrupts.obj
 
@@ -183,6 +207,30 @@ kernel_main.s: kernel_main.cpp.s
 kernel_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/kernel_main.cpp.s
 .PHONY : kernel_main.cpp.s
+
+pmm.obj: pmm.cpp.obj
+.PHONY : pmm.obj
+
+# target to build an object file
+pmm.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/pmm.cpp.obj
+.PHONY : pmm.cpp.obj
+
+pmm.i: pmm.cpp.i
+.PHONY : pmm.i
+
+# target to preprocess a source file
+pmm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/pmm.cpp.i
+.PHONY : pmm.cpp.i
+
+pmm.s: pmm.cpp.s
+.PHONY : pmm.s
+
+# target to generate assembly for a file
+pmm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\kernel.bin.dir\build.make CMakeFiles/kernel.bin.dir/pmm.cpp.s
+.PHONY : pmm.cpp.s
 
 shell_engine.obj: shell_engine.cpp.obj
 .PHONY : shell_engine.obj
@@ -241,6 +289,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... kernel.bin
+	@echo ... heap.obj
+	@echo ... heap.i
+	@echo ... heap.s
 	@echo ... interrupts.obj
 	@echo ... interrupts.i
 	@echo ... interrupts.s
@@ -248,6 +299,9 @@ help:
 	@echo ... kernel_main.obj
 	@echo ... kernel_main.i
 	@echo ... kernel_main.s
+	@echo ... pmm.obj
+	@echo ... pmm.i
+	@echo ... pmm.s
 	@echo ... shell_engine.obj
 	@echo ... shell_engine.i
 	@echo ... shell_engine.s

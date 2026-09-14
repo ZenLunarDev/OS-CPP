@@ -1,4 +1,4 @@
-ENTRY(kernel_main)
+ENTRY(_start)
 
 SECTIONS
 {
@@ -6,7 +6,7 @@ SECTIONS
 
     .text BLOCK(4K) : ALIGN(4K)
     {
-        *(.multiboot)    /* <--- วาง Multiboot Header ไว้จุดแรกสุด */
+        *(.multiboot)
         *(.text)
     }
 
