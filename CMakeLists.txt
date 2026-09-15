@@ -1,16 +1,10 @@
 cmake_minimum_required(VERSION 3.20)
 
-set(CMAKE_SYSTEM_NAME Generic)
-set(CMAKE_SYSTEM_PROCESSOR i686)
-
-set(TOOLCHAIN_PATH "C:/i686-elf-tools-windows/bin")
-set(NASM_PATH "C:/Users/Lunar/AppData/Local/bin/NASM")
-
-set(CMAKE_C_COMPILER "${TOOLCHAIN_PATH}/i686-elf-gcc.exe")
-set(CMAKE_CXX_COMPILER "${TOOLCHAIN_PATH}/i686-elf-g++.exe")
-set(CMAKE_ASM_NASM_COMPILER "${NASM_PATH}/nasm.exe")
-
-set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
+# ---- Toolchain: หา i686-elf cross compiler หรือ fallback เป็น host gcc -m32 ----
+# (ถ้าจะระบุ toolchain file เอง: cmake -B build -DCMAKE_TOOLCHAIN_FILE=cmake/toolchain-i686.cmake)
+if(NOT CMAKE_TOOLCHAIN_FILE)
+    include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/toolchain-i686.cmake)
+endif()
 
 project(MeowOS C CXX ASM_NASM)
 
@@ -41,10 +35,10 @@ set(USER_OUT_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 # hello: nasm → link ที่ 0x40000000 → flat binary → ELF object สำหรับ embed
 add_custom_command(
         OUTPUT ${USER_OUT_DIR}/hello.o_embed
-        COMMAND ${NASM_PATH}/nasm.exe -f elf32 ${CMAKE_CURRENT_SOURCE_DIR}/user/user_hello.asm -o hello_user.o
-        COMMAND ${TOOLCHAIN_PATH}/i686-elf-ld.exe -T ${USER_LD_SCRIPT} -o hello.elf hello_user.o
-        COMMAND ${TOOLCHAIN_PATH}/i686-elf-objcopy.exe -O binary hello.elf hello.bin
-        COMMAND ${TOOLCHAIN_PATH}/i686-elf-objcopy.exe -I binary -O elf32-i386 -B i386 hello.bin hello.o_embed
+        COMMAND ${CMAKE_ASM_NASM_COMPILER} -f elf32 ${CMAKE_CURRENT_SOURCE_DIR}/user/user_hello.asm -o hello_user.o
+        COMMAND ${MEOWOS_LD} -T ${USER_LD_SCRIPT} -o hello.elf hello_user.o
+        COMMAND ${MEOWOS_OBJCOPY} -O binary hello.elf hello.bin
+        COMMAND ${MEOWOS_OBJCOPY} -I binary -O elf32-i386 -B i386 hello.bin hello.o_embed
         DEPENDS user/user_hello.asm user/user.ld
         WORKING_DIRECTORY ${USER_OUT_DIR}
         COMMENT "Building user program: hello"
@@ -53,8 +47,8 @@ add_custom_command(
 # usercrash: nasm -f bin ตรงๆ → ELF object สำหรับ embed
 add_custom_command(
         OUTPUT ${USER_OUT_DIR}/usercrash.o_embed
-        COMMAND ${NASM_PATH}/nasm.exe -f bin ${CMAKE_CURRENT_SOURCE_DIR}/user/usercrash.asm -o usercrash.bin
-        COMMAND ${TOOLCHAIN_PATH}/i686-elf-objcopy.exe -I binary -O elf32-i386 -B i386 usercrash.bin usercrash.o_embed
+        COMMAND ${CMAKE_ASM_NASM_COMPILER} -f bin ${CMAKE_CURRENT_SOURCE_DIR}/user/usercrash.asm -o usercrash.bin
+        COMMAND ${MEOWOS_OBJCOPY} -I binary -O elf32-i386 -B i386 usercrash.bin usercrash.o_embed
         DEPENDS user/usercrash.asm
         WORKING_DIRECTORY ${USER_OUT_DIR}
         COMMENT "Building user program: usercrash"

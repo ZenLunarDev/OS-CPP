@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install toolchain (nasm, qemu, 32-bit host fallback)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y nasm qemu-system-x86 gcc-multilib
+          # ไม่มี i686-elf-gcc บน runner → toolchain file จะ fallback เป็น host gcc -m32 เอง
+
+      - name: Build kernel
+        run: |
+          cmake -B build -G "Unix Makefiles"
+          cmake --build build
+
+      - name: QEMU smoke test (13 commands via QMP keyboard)
+        run: |
+          python3 tools/smoke_test.py

@@ -1,0 +1,34 @@
+# Build directories
+build/
+cmake-build-*/
+out/
+
+# Compiled objects / binaries
+*.o
+*.obj
+*.elf
+*.bin
+*.o_embed
+kernel.bin
+hello_user.o
+
+# QEMU / smoke test artifacts
+meow_serial.log
+meow_serial*.log
+meow_qmp.sock
+qemu_int.log
+qemu_dmesg.log
+*.log
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+# Freebuff app state
+.freebuff/
