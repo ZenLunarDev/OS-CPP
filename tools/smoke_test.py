@@ -11,6 +11,7 @@ QMP_HOST = "127.0.0.1"
 QMP_PORT = 4444
 SERIAL_LOG = os.path.abspath("meow_serial.log")
 KERNEL = os.path.abspath("build/kernel.bin")
+QEMU_STDERR = os.path.abspath("qemu_stderr.log")
 
 KEYMAP = {
     'a': 'a', 'b': 'b', 'c': 'c', 'd': 'd', 'e': 'e', 'f': 'f', 'g': 'g',
@@ -75,28 +76,41 @@ def send_string(qmp, text):
 def main():
     if os.path.exists(SERIAL_LOG):
         os.remove(SERIAL_LOG)
+    if os.path.exists(QEMU_STDERR):
+        os.remove(QEMU_STDERR)
 
+    # stderr/stdout ของ QEMU ต้องเก็บไว้ — ถ้า QEMU ตายตั้งแต่ startup จะได้เห็นสาเหตุ
+    qemu_err_f = open(QEMU_STDERR, "wb")
     qemu = subprocess.Popen([
         "qemu-system-i386",
         "-kernel", KERNEL,
         "-m", "64M",
         "-serial", f"file:{SERIAL_LOG}",
         "-display", "none",
-        "-qmp", f"tcp:{QMP_HOST}:{QMP_PORT},server,nowait",
+        "-qmp", f"tcp:{QMP_HOST}:{QMP_PORT},server=on,wait=off",
         "-no-reboot",
-    ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    ], stdout=qemu_err_f, stderr=subprocess.STDOUT)
 
     try:
-        # รอ QMP port เปิด
+        # รอ QMP port เปิด (30s — รวมกรณี runner เย็น/QEMU โหลดนาน)
         qmp = None
-        for _ in range(50):
+        for _ in range(150):
+            if qemu.poll() is not None:
+                break   # QEMU ตายไปแล้ว — ไม่ต้องรอต่อ
             try:
                 qmp = QMPClient(QMP_HOST, QMP_PORT)
                 break
             except OSError:
                 time.sleep(0.2)
         if qmp is None:
-            print("FAIL: QMP port never opened")
+            qemu_err_f.close()
+            try:
+                err_text = open(QEMU_STDERR, "r", errors="replace").read()[-1500:]
+            except Exception:
+                err_text = "(unreadable)"
+            print(f"FAIL: QMP port never opened (qemu exit code: {qemu.poll()})")
+            print("--- qemu stderr/stdout tail ---")
+            print(err_text)
             return 1
         qmp.cmd("qmp_capabilities")
 
