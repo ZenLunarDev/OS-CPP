@@ -29,21 +29,17 @@ jobs:
       - name: Annotate failure with log tail
         if: failure()
         run: |
-          PAYLOAD=$(python3 - <<'EOF'
+          # annotation จำกัด ~4KB — เล็กลงและแยกเป็น 2 ก้อน
+          python3 - <<'EOF'
           import urllib.parse
-          try:
-              cfg = open('/tmp/configure.log', 'rb').read().decode(errors='replace')[-1500:]
-          except Exception as e:
-              cfg = f'(no configure log: {e})'
-          try:
-              bld = open('/tmp/build.log', 'rb').read().decode(errors='replace')[-4000:]
-          except Exception as e:
-              bld = f'(no build log: {e})'
-          text = f'configure tail:\n{cfg}\n=== build tail ===\n{bld}'
-          print(urllib.parse.quote(text, safe=''))
+          for name, path, cap in [('configure', '/tmp/configure.log', 1000), ('build', '/tmp/build.log', 2500)]:
+              try:
+                  tail = open(path, 'rb').read().decode(errors='replace')[-cap:]
+              except Exception as e:
+                  tail = f'(no {name} log: {e})'
+              text = urllib.parse.quote(f'{name} tail:\n{tail}', safe='')
+              print(f'::error::{text}')
           EOF
-          )
-          echo "::error::$PAYLOAD"
 
       - name: QEMU smoke test (13 commands via QMP keyboard)
         if: success()
