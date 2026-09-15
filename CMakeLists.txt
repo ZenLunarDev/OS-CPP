@@ -8,7 +8,9 @@ endif()
 
 project(MeowOS C CXX ASM_NASM)
 
-set(COMMON_FLAGS "-m32 -ffreestanding -O2 -Wall -Wextra")
+set(COMMON_FLAGS "-m32 -ffreestanding -O2 -Wall -Wextra -fno-pie -fno-stack-protector")
+# -fno-pie/-fno-stack-protector: distro gcc (Ubuntu CI) เปิด PIE + stack protector เป็น default
+# ซึ่งพังทันทีกับ -nostdlib bare-metal link — cross gcc ไม่มี default พวกนี้ แต่ใส่เพื่อความชัวร์
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${COMMON_FLAGS}")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${COMMON_FLAGS} -fno-exceptions -fno-rtti")
 set(CMAKE_ASM_NASM_FLAGS "${CMAKE_ASM_NASM_FLAGS} -f elf32")
@@ -61,6 +63,6 @@ add_dependencies(kernel.bin user_programs)
 
 set(LINKER_SCRIPT "${CMAKE_CURRENT_SOURCE_DIR}/linker.ld")
 set_target_properties(kernel.bin PROPERTIES
-        LINK_FLAGS "-m32 -nostdlib -Wl,-T,${LINKER_SCRIPT} ${USER_OUT_DIR}/hello.o_embed ${USER_OUT_DIR}/usercrash.o_embed"
+        LINK_FLAGS "-m32 -no-pie -nostdlib -Wl,-T,${LINKER_SCRIPT} ${USER_OUT_DIR}/hello.o_embed ${USER_OUT_DIR}/usercrash.o_embed"
         SUFFIX ""
 )
