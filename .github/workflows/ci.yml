@@ -23,7 +23,7 @@ jobs:
         run: |
           set -o pipefail
           cmake -B build -G "Unix Makefiles" 2>&1 | tee /tmp/configure.log
-          cmake --build build 2>&1 | tee /tmp/build.log
+          cmake --build build --verbose 2>&1 | tee /tmp/build.log
 
       # ผ่าน API อ่าน annotation ได้โดยไม่ต้อง auth — ใส่ log tail ไว้ในนั้นเพื่อ debug
       - name: Annotate failure with log tail

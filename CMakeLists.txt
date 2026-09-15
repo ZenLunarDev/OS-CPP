@@ -6,6 +6,11 @@ if(NOT CMAKE_TOOLCHAIN_FILE)
     include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/toolchain-i686.cmake)
 endif()
 
+# ★ ต้อง set ก่อน project(): CMAKE_ASM_NASM_OBJECT_FORMAT ถูกอ่านตอน enable language ASM_NASM
+# default ของ CMake คือ bare 'elf' ซึ่ง nasm บนเครื่อง 64-bit (Ubuntu CI) ตีความเป็น elf64
+# → .asm.obj กลายเป็น ELF x86-64 ทั้งที่ encode เป็น 32-bit แล้ว link ไม่ผ่าน
+set(CMAKE_ASM_NASM_OBJECT_FORMAT elf32)
+
 project(MeowOS C CXX ASM_NASM)
 
 set(COMMON_FLAGS "-m32 -ffreestanding -O2 -Wall -Wextra -fno-pie -fno-stack-protector")
@@ -13,12 +18,6 @@ set(COMMON_FLAGS "-m32 -ffreestanding -O2 -Wall -Wextra -fno-pie -fno-stack-prot
 # ซึ่งพังทันทีกับ -nostdlib bare-metal link — cross gcc ไม่มี default พวกนี้ แต่ใส่เพื่อความชัวร์
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${COMMON_FLAGS}")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${COMMON_FLAGS} -fno-exceptions -fno-rtti")
-# ★ object format ต้อง set ผ่าน CMAKE_ASM_NASM_OBJECT_FORMAT เท่านั้น:
-# CMake แทรก -f ${CMAKE_ASM_NASM_OBJECT_FORMAT} ไว้ 'หน้า' flags ของเรา และ default คือ bare 'elf'
-# ซึ่ง nasm บนเครื่อง 64-bit (CI/Ubuntu) แปลว่า elf64 → "instruction not supported in 64-bit mode"
-# (local NASM 3.02 + duplicate -f เดาถูกเอง จึงไม่เคยเห็นบั๊กนี้บนเครื่อง)
-set(CMAKE_ASM_NASM_OBJECT_FORMAT elf32)
-
 include_directories(
         include/kernel
         include/drivers
