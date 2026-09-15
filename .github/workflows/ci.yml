@@ -23,20 +23,29 @@ jobs:
         run: |
           set -o pipefail
           cmake -B build -G "Unix Makefiles" 2>&1 | tee /tmp/configure.log
-          if ! cmake --build build 2>&1 | tee /tmp/build.log; then
-            {
-              echo "### Configure log (tail)"
-              echo '```'
-              tail -40 /tmp/configure.log
-              echo '```'
-              echo "### Build log (tail)"
-              echo '```'
-              tail -60 /tmp/build.log
-              echo '```'
-            } >> "$GITHUB_STEP_SUMMARY"
-            exit 1
-          fi
+          cmake --build build 2>&1 | tee /tmp/build.log
+
+      # ผ่าน API อ่าน annotation ได้โดยไม่ต้อง auth — ใส่ log tail ไว้ในนั้นเพื่อ debug
+      - name: Annotate failure with log tail
+        if: failure()
+        run: |
+          PAYLOAD=$(python3 - <<'EOF'
+          import urllib.parse
+          try:
+              cfg = open('/tmp/configure.log', 'rb').read().decode(errors='replace')[-1500:]
+          except Exception as e:
+              cfg = f'(no configure log: {e})'
+          try:
+              bld = open('/tmp/build.log', 'rb').read().decode(errors='replace')[-4000:]
+          except Exception as e:
+              bld = f'(no build log: {e})'
+          text = f'configure tail:\n{cfg}\n=== build tail ===\n{bld}'
+          print(urllib.parse.quote(text, safe=''))
+          EOF
+          )
+          echo "::error::$PAYLOAD"
 
       - name: QEMU smoke test (13 commands via QMP keyboard)
+        if: success()
         run: |
           python3 tools/smoke_test.py
