@@ -21,8 +21,21 @@ jobs:
 
       - name: Build kernel
         run: |
-          cmake -B build -G "Unix Makefiles"
-          cmake --build build
+          set -o pipefail
+          cmake -B build -G "Unix Makefiles" 2>&1 | tee /tmp/configure.log
+          if ! cmake --build build 2>&1 | tee /tmp/build.log; then
+            {
+              echo "### Configure log (tail)"
+              echo '```'
+              tail -40 /tmp/configure.log
+              echo '```'
+              echo "### Build log (tail)"
+              echo '```'
+              tail -60 /tmp/build.log
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
 
       - name: QEMU smoke test (13 commands via QMP keyboard)
         run: |
