@@ -13,7 +13,11 @@ set(COMMON_FLAGS "-m32 -ffreestanding -O2 -Wall -Wextra -fno-pie -fno-stack-prot
 # ซึ่งพังทันทีกับ -nostdlib bare-metal link — cross gcc ไม่มี default พวกนี้ แต่ใส่เพื่อความชัวร์
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${COMMON_FLAGS}")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${COMMON_FLAGS} -fno-exceptions -fno-rtti")
-set(CMAKE_ASM_NASM_FLAGS "${CMAKE_ASM_NASM_FLAGS} -f elf32")
+# ★ object format ต้อง set ผ่าน CMAKE_ASM_NASM_OBJECT_FORMAT เท่านั้น:
+# CMake แทรก -f ${CMAKE_ASM_NASM_OBJECT_FORMAT} ไว้ 'หน้า' flags ของเรา และ default คือ bare 'elf'
+# ซึ่ง nasm บนเครื่อง 64-bit (CI/Ubuntu) แปลว่า elf64 → "instruction not supported in 64-bit mode"
+# (local NASM 3.02 + duplicate -f เดาถูกเอง จึงไม่เคยเห็นบั๊กนี้บนเครื่อง)
+set(CMAKE_ASM_NASM_OBJECT_FORMAT elf32)
 
 include_directories(
         include/kernel
