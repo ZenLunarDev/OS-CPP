@@ -29,16 +29,27 @@ jobs:
       - name: Annotate failure with log tail
         if: failure()
         run: |
-          # annotation จำกัด ~4KB — เล็กลงและแยกเป็น 2 ก้อน
+          # annotation จำกัด ~4KB — เล็กลงและแยกเป็นหลายก้อน
           python3 - <<'EOF'
-          import urllib.parse
-          for name, path, cap in [('configure', '/tmp/configure.log', 1000), ('build', '/tmp/build.log', 2500)]:
+          import urllib.parse, re
+          def grab(path, cap):
               try:
-                  tail = open(path, 'rb').read().decode(errors='replace')[-cap:]
+                  return open(path, 'rb').read().decode(errors='replace')[-cap:]
               except Exception as e:
-                  tail = f'(no {name} log: {e})'
-              text = urllib.parse.quote(f'{name} tail:\n{tail}', safe='')
-              print(f'::error::{text}')
+                  return f'(no log: {e})'
+          bld = grab('/tmp/build.log', 120000)
+          m = re.search(r'nasm[^\n]*interrupts', bld)
+          v = re.search(r'nasm[^\n]*interrupts', bld)
+          cmd = m.group(0) if m else '(nasm cmd not found)'
+          head = bld[:1500]
+          tail = bld[-1800:]
+          for label, chunk in [
+              ('nasm cmd', cmd),
+              ('build head', head),
+              ('build tail', tail),
+              ('configure tail', grab('/tmp/configure.log', 800)),
+          ]:
+              print(f'::error::{label}: ' + urllib.parse.quote(chunk, safe=''))
           EOF
 
       - name: QEMU smoke test (13 commands via QMP keyboard)
