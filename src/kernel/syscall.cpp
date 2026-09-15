@@ -38,7 +38,9 @@ extern "C" uint32_t syscall_handler(uint32_t num, uint32_t arg1, uint32_t arg2, 
             // (กัน buffer เก่ากลายเป็น command มั่ว) — เหมือนที่ kill_user_process ทำ
             shell_flush_input();
 
-            vga_puts("\n[User Process Exited]");            if (g_user_kernel_esp == 0) {
+            vga_puts("\n[User Process Exited]");
+            vga_puts("\nMeowOS> ");   // ให้ทั้งสอง path (exit + fault-kill) กลับมาเจอ prompt เหมือนกัน
+            if (g_user_kernel_esp == 0) {
                 // เรียกจาก Ring 0 โดยไม่มี user context — ไม่มีทางกลับ ต้อง halt
                 vga_puts("\n[SYS_EXIT] No user context. Halting.");
                 while (1) { asm volatile("cli; hlt"); }

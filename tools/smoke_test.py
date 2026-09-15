@@ -142,19 +142,20 @@ def main():
         ]
 
         failures = 0
-        wait_prompt = False   # คำสั่งก่อนหน้าลง user mode → รอ shell prompt กลับมาก่อนพิมพ์คำถัดไป
+        wait_marker = None    # คำสั่งก่อนหน้าลง user mode → รอ marker จบ user process ก่อนพิมพ์คำถัดไป
         for cmd, expect in tests:
-            if wait_prompt:
-                mark = read_serial()
+            if wait_marker:
+                # state-based: kernel flush input ก่อนพิมพ์ marker เสมอ — เห็น marker = พิมพ์ได้ปลอดภัย
+                # (ห้ามรอ prompt 'ใหม่': exit path พิมพ์ prompt ค้างไว้แล้ว จำนวน prompt จะไม่เพิ่มอีก)
                 deadline = time.time() + 90
                 while time.time() < deadline:
-                    if "MeowOS> " in read_serial()[len(mark):]:
+                    if wait_marker in read_serial():
                         break
                     time.sleep(0.5)
                 else:
-                    print("  *** shell prompt never returned after user program")
+                    print(f"  *** marker {wait_marker!r} never appeared after user program")
                     failures += 1
-                wait_prompt = False
+                wait_marker = None
             print(f"\n>>> {cmd.strip()!r} (expect: {expect!r})")
             baseline = read_serial()   # log ก่อนพิมพ์คำสั่งนี้
             send_string(qmp, cmd)
@@ -172,8 +173,10 @@ def main():
             if expect not in out[len(baseline):]:
                 failures += 1
                 print(f"  *** MISSING (90s): {expect!r}")
-            if cmd.strip() in ("hello", "user", "usercrash"):
-                wait_prompt = True
+            if cmd.strip() in ("hello", "user"):
+                wait_marker = "[User Process Exited]"
+            elif cmd.strip() == "usercrash":
+                wait_marker = "[Shell] Returned from user mode."
 
         print("\n=== SUMMARY ===")
         if failures == 0:
