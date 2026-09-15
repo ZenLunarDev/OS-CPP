@@ -37,22 +37,24 @@ jobs:
                   return open(path, 'rb').read().decode(errors='replace')[-cap:]
               except Exception as e:
                   return f'(no log: {e})'
-          bld = grab('/tmp/build.log', 120000)
-          m = re.search(r'nasm[^\n]*interrupts', bld)
-          v = re.search(r'nasm[^\n]*interrupts', bld)
-          cmd = m.group(0) if m else '(nasm cmd not found)'
-          head = bld[:1500]
-          tail = bld[-1800:]
-          for label, chunk in [
-              ('nasm cmd', cmd),
-              ('build head', head),
-              ('build tail', tail),
-              ('configure tail', grab('/tmp/configure.log', 800)),
+          for label, path, mode, cap in [
+              ('nasm cmd', '/tmp/build.log', 'regex', 300),
+              ('build tail', '/tmp/build.log', 'tail', 1800),
+              ('configure tail', '/tmp/configure.log', 'tail', 800),
+              ('smoke tail', '/tmp/smoke.log', 'tail', 1800),
+              ('serial tail', 'meow_serial.log', 'tail', 1800),
           ]:
+              if mode == 'regex':
+                  bld = grab('/tmp/build.log', 120000)
+                  m = re.search(r'nasm[^\n]*interrupts', bld)
+                  chunk = m.group(0) if m else '(nasm cmd not found)'
+              else:
+                  chunk = grab(path, cap)
               print(f'::error::{label}: ' + urllib.parse.quote(chunk, safe=''))
           EOF
 
       - name: QEMU smoke test (13 commands via QMP keyboard)
         if: success()
         run: |
-          python3 tools/smoke_test.py
+          set -o pipefail
+          python3 tools/smoke_test.py 2>&1 | tee /tmp/smoke.log

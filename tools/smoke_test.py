@@ -100,14 +100,26 @@ def main():
             return 1
         qmp.cmd("qmp_capabilities")
 
-        time.sleep(1.5)  # ให้ kernel boot เสร็จ
-
         def read_serial():
             try:
                 with open(SERIAL_LOG, "rb") as f:
                     return f.read().decode("utf-8", errors="replace")
             except FileNotFoundError:
                 return ""
+
+        # รอจน kernel boot จริง (เห็น prompt ใน serial) — TCG emulation บน CI ช้ากว่า local
+        # มาก ห้ามใช้ sleep คงที่
+        boot_deadline = time.time() + 120
+        while time.time() < boot_deadline:
+            if "MeowOS>" in read_serial():
+                break
+            time.sleep(0.5)
+        else:
+            print("FAIL: kernel never printed the shell prompt within 120s")
+            print(read_serial()[-2000:])
+            qmp.cmd("quit")
+            return 1
+        time.sleep(0.5)  # settle
 
         print("=== Boot output ===")
         print(read_serial())
@@ -130,23 +142,38 @@ def main():
         ]
 
         failures = 0
-        last_cmd = ""
+        wait_prompt = False   # คำสั่งก่อนหน้าลง user mode → รอ shell prompt กลับมาก่อนพิมพ์คำถัดไป
         for cmd, expect in tests:
+            if wait_prompt:
+                mark = read_serial()
+                deadline = time.time() + 90
+                while time.time() < deadline:
+                    if "MeowOS> " in read_serial()[len(mark):]:
+                        break
+                    time.sleep(0.5)
+                else:
+                    print("  *** shell prompt never returned after user program")
+                    failures += 1
+                wait_prompt = False
             print(f"\n>>> {cmd.strip()!r} (expect: {expect!r})")
+            baseline = read_serial()   # log ก่อนพิมพ์คำสั่งนี้
             send_string(qmp, cmd)
-            # user program ใช้เวลา enter/exit Ring 3 — รอนานกว่าปกติ กันคีย์เหลือค้าง buffer
-            # และคำสั่งถัดไปหลัง user ก็ต้องรอด้วย (คีย์ที่พิมพ์ค้างจะโดน kernel ทิ้งเอง)
-            after_user = last_cmd in ("hello", "user", "usercrash")
-            settle = 3.0 if cmd.strip() in ("hello", "user", "usercrash", "task") else (2.0 if after_user else 1.0)
-            last_cmd = cmd.strip()
+            # รอจน expect ปรากฏในส่วนที่เพิ่มใหม่ของ serial — TCG บน CI ช้ากว่า local มาก
+            # จึงห้ามพึ่ง sleep คงที่; deadline ยาวพอสำหรับ user-mode round trip
+            deadline = time.time() + 90
+            while time.time() < deadline:
+                out = read_serial()
+                if expect in out[len(baseline):]:
+                    break
+                time.sleep(0.5)
             out = read_serial()
-            # แสดงเฉพาะส่วนท้ายพอดีๆ
             tail = out[-600:].replace("\r", "")
             print(tail)
-            ok = expect in out
-            if not ok:
+            if expect not in out[len(baseline):]:
                 failures += 1
-                print(f"  *** MISSING: {expect!r}")
+                print(f"  *** MISSING (90s): {expect!r}")
+            if cmd.strip() in ("hello", "user", "usercrash"):
+                wait_prompt = True
 
         print("\n=== SUMMARY ===")
         if failures == 0:
