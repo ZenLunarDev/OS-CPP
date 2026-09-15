@@ -70,6 +70,6 @@ jobs:
                   return open(path, 'rb').read().decode(errors='replace')[-cap:]
               except Exception as e:
                   return f'(no log: {e})'
-          for label, path in [('smoke tail', '/tmp/smoke.log'), ('serial tail', 'meow_serial.log')]:
+          for label, path in [('smoke tail', '/tmp/smoke.log'), ('serial tail', 'meow_serial.log'), ('qemu stderr', 'qemu_stderr.log')]:
               print(f'::error::{label}: ' + urllib.parse.quote(grab(path, 2500), safe=''))
           EOF

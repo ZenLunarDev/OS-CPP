@@ -66,6 +66,6 @@ add_dependencies(kernel.bin user_programs)
 
 set(LINKER_SCRIPT "${CMAKE_CURRENT_SOURCE_DIR}/linker.ld")
 set_target_properties(kernel.bin PROPERTIES
-        LINK_FLAGS "-m32 -no-pie -nostdlib -Wl,-T,${LINKER_SCRIPT} ${USER_OUT_DIR}/hello.o_embed ${USER_OUT_DIR}/usercrash.o_embed"
+        LINK_FLAGS "-m32 -no-pie -nostdlib -Wl,--build-id=none -Wl,-T,${LINKER_SCRIPT} ${USER_OUT_DIR}/hello.o_embed ${USER_OUT_DIR}/usercrash.o_embed"
         SUFFIX ""
 )
