@@ -58,3 +58,18 @@ jobs:
         run: |
           set -o pipefail
           python3 tools/smoke_test.py 2>&1 | tee /tmp/smoke.log
+
+      # แยก step annotate หลัง smoke — if: failure() ต้องประเมิน 'หลัง' step นั้นพัง
+      - name: Annotate smoke failure
+        if: failure()
+        run: |
+          python3 - <<'EOF'
+          import urllib.parse
+          def grab(path, cap):
+              try:
+                  return open(path, 'rb').read().decode(errors='replace')[-cap:]
+              except Exception as e:
+                  return f'(no log: {e})'
+          for label, path in [('smoke tail', '/tmp/smoke.log'), ('serial tail', 'meow_serial.log')]:
+              print(f'::error::{label}: ' + urllib.parse.quote(grab(path, 2500), safe=''))
+          EOF
