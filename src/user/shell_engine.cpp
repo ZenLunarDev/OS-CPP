@@ -11,6 +11,7 @@
 #include "syscall.h"
 #include "vfs.h"
 #include "userinfo.h"
+#include "vga_fb.h"
 
 static void* test_ptr = nullptr;
 
@@ -175,7 +176,7 @@ static void execute_command(const char* raw_cmd) {
     if (cmd[0] == '\0') return;
 
     if (streq(cmd, "help")) {
-        vga_puts("\nAvailable commands: help, cls, reboot, meminfo, alloc, free, uptime, date, crash, ls, cat, task, sysdemo, user");
+        vga_puts("\nAvailable commands: help, cls, reboot, meminfo, alloc, free, uptime, date, crash, ls, cat, task, sysdemo, user, gui, text");
     } else if (streq(cmd, "cls")) {
         vga_clear();
     } else if (streq(cmd, "reboot")) {
@@ -253,6 +254,24 @@ static void execute_command(const char* raw_cmd) {
         // legacy: รัน 'hello' ผ่านชื่อเดิม
         vga_puts("\nSwitching execution to Ring 3 (User Mode)...");
         run_user_program(user_programs[0].data, user_programs[0].size);
+    } else if (streq(cmd, "gui")) {
+        // ---- GUI stack: เข้า graphics mode + วาด demo frame (direct rendering) ----
+        vga_puts("\n[gui] entering graphics mode 1024x768x16...");
+        if (fb_enter_graphics()) {
+            fb_draw_demo();
+            vga_puts("\n[gui] frame presented. VGA text output now goes to serial only.");
+        } else {
+            vga_puts("\n[gui] framebuffer unavailable (init failed?)");
+        }
+    } else if (streq(cmd, "text")) {
+        // ---- กลับ text mode 80x25 — shell กลับมาเห็นบนจอปกติ ----
+        if (fb_available()) {
+            fb_text_mode();
+            vga_clear();   // VRAM ตอนนี้มีขยะจากตอน graphics mode — ล้างก่อนพิมพ์ต่อ
+            vga_puts("[text] back to text mode.");   // prompt พิมพ์โดย shell_update เอง
+        } else {
+            vga_puts("\n[text] already in text mode.");
+        }
     } else {
         vga_puts("\nUnknown command: ");
         vga_puts(cmd);

@@ -59,6 +59,26 @@ jobs:
           set -o pipefail
           python3 tools/smoke_test.py 2>&1 | tee /tmp/smoke.log
 
+      - name: QEMU framebuffer test (screendump pixel verification)
+        if: success()
+        run: |
+          set -o pipefail
+          python3 tools/fb_test.py 2>&1 | tee /tmp/fb.log
+
+      - name: Annotate fb failure
+        if: failure()
+        run: |
+          python3 - <<'EOF'
+          import urllib.parse
+          def grab(path, cap):
+              try:
+                  return open(path, 'rb').read().decode(errors='replace')[-cap:]
+              except Exception as e:
+                  return f'(no log: {e})'
+          for label, path in [('fb tail', '/tmp/fb.log'), ('serial tail', 'meow_serial.log'), ('qemu stderr', 'qemu_stderr.log')]:
+              print(f'::error::{label}: ' + urllib.parse.quote(grab(path, 2500), safe=''))
+          EOF
+
       # แยก step annotate หลัง smoke — if: failure() ต้องประเมิน 'หลัง' step นั้นพัง
       - name: Annotate smoke failure
         if: failure()

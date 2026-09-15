@@ -26,7 +26,8 @@ include_directories(
         include/user
 )
 
-file(GLOB_RECURSE SOURCES
+# CONFIGURE_DEPENDS: เพิ่ม/ลบไฟล์ใหม่แล้ว cmake จะ re-glob เองตอน build (ไม่ต้อง reconfigure มือ)
+file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS
         "src/*.cpp"
         "src/*.c"
         "src/*.asm"

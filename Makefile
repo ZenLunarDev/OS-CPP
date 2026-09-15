@@ -21,3 +21,7 @@ run: build
 # Automated smoke test (headless + serial log)
 test: build
 	python tools/smoke_test.py
+
+# Framebuffer verification (boots, renders demo frame, checks pixels via QMP screendump)
+fbtest: build
+	python tools/fb_test.py
