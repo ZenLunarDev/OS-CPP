@@ -151,6 +151,11 @@ static void run_user_program(const uint8_t* data, uint32_t size) {
 extern "C" void shell_flush_input() {
     uint8_t junk;
     while (ringbuffer_pop(&junk)) {}
+    // ทิ้งบรรทัดค้างด้วย: execute_command ออกทาง enter_user_mode (noreturn)
+    // จึงไม่เคยผ่านโค้ด reset ของ shell_update — cmd_buffer ยังกองคำสั่งเก่าอยู่
+    cmd_idx = 0;
+    cmd_buffer[0] = '\0';
+    shift_pressed = false;
 }
 
 extern "C" void kill_user_process() {

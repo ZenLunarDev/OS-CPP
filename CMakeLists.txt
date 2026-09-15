@@ -38,7 +38,7 @@ set(USER_OUT_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 add_custom_command(
         OUTPUT ${USER_OUT_DIR}/hello.o_embed
         COMMAND ${CMAKE_ASM_NASM_COMPILER} -f elf32 ${CMAKE_CURRENT_SOURCE_DIR}/user/user_hello.asm -o hello_user.o
-        COMMAND ${MEOWOS_LD} -T ${USER_LD_SCRIPT} -o hello.elf hello_user.o
+        COMMAND ${MEOWOS_LD} -m elf_i386 -T ${USER_LD_SCRIPT} -o hello.elf hello_user.o
         COMMAND ${MEOWOS_OBJCOPY} -O binary hello.elf hello.bin
         COMMAND ${MEOWOS_OBJCOPY} -I binary -O elf32-i386 -B i386 hello.bin hello.o_embed
         DEPENDS user/user_hello.asm user/user.ld
